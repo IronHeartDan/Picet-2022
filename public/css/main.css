@@ -1,0 +1,503 @@
+@font-face {
+  font-family: custom;
+  src: url("../asset/JosefinSans-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: custom;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollToTop {
+  cursor: pointer;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 5px black;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.25s;
+}
+
+.nav_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #a4b0be; */
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  z-index: 1000;
+  background-color: transparent;
+  height: 60px;
+}
+
+.nav_header > .logo {
+  margin: 10px;
+  width: 100px;
+  pointer-events: none;
+}
+
+.nav_header > .logo > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.nav_header > nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.nav_header > nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_header > nav > a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  transition: background-color ease 0.25s;
+  font-size: large;
+  min-width: max-content;
+  /* mix-blend-mode: difference; */
+}
+
+.nav_header > nav > a:hover,
+.active {
+  border-bottom: 2px solid white;
+}
+
+.nav_menu {
+  display: none;
+}
+
+section {
+  position: relative;
+}
+
+/* Home section */
+
+.home {
+  background-image: url("../asset/home_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 85vh;
+}
+
+/* .home > img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  
+} */
+
+.home .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.home .content > h1 {
+  color: orange;
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: 50px;
+  max-width: max-content;
+  text-shadow: 0 0 10px black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.home .content > p {
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+
+.home .getStarted {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%) rotate(180deg);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px black;
+}
+
+/* Home section End*/
+
+/* Tracks section */
+
+.tracks {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  background-color: orange;
+  padding: 10vh 0 10vh 10vh;
+  z-index: -1;
+}
+
+.tracks > div {
+  position: relative;
+  min-height: 80vh;
+  width: 100vw;
+  padding: 50px;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 2px black;
+}
+
+.tracks > div:nth-child(1) {
+  border-radius: 50px 0 0 50px;
+}
+
+.tracks > div > div > h1 {
+  padding: 10px;
+}
+
+.tracks > div > div > ul {
+  padding: 10px;
+}
+
+.tracks > div > div > ul > li {
+  padding: 5px;
+  font-size: medium;
+}
+.tracks > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tracks > div > div:nth-child(2) > img {
+  max-width: 350px;
+}
+
+/* Tracks section */
+
+/* keynoteSpeaker Section */
+
+.keynoteSpeaker {
+  min-height: calc(100vh - 60px);
+  text-align: center;
+}
+
+.keynoteSpeaker > h1 {
+  padding: 20px;
+  font-size: 2em;
+}
+
+.keynoteSpeaker > div {
+  display: flex;
+  justify-content: center;
+}
+
+.keynoteSpeaker > div > div {
+  flex: 1;
+  padding: 50px;
+}
+
+.keynoteSpeaker > div > div > img {
+  user-select: none;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  transition: all ease 0.5s;
+  /* animation: speakers 1.5s infinite alternate-reverse ease-in-out; */
+}
+
+@keyframes speakers {
+  from {
+    box-shadow: 0 0 5px black;
+  }
+  to {
+    box-shadow: 0 0 50px orange;
+  }
+}
+
+.keynoteSpeaker > div > div > p {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.keynoteSpeaker > div > div > h4 {
+  line-height: 2;
+}
+
+/* keynoteSpeaker Section End*/
+
+/* Keydates Section */
+
+.keydate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  box-shadow: 0 0 2px black;
+}
+
+.keydate > h1 {
+  padding: 20px;
+  font-size: 2em;
+}
+
+.keydate > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keydate > div > table {
+  width: 40vw;
+}
+
+.keydate > div > table > tbody > tr:nth-child(odd) {
+  background-color: darkgray;
+}
+
+.keydate > div > table > tbody > tr:nth-child(even) {
+  background-color: orange;
+}
+
+.keydate > div > table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 10px;
+  color: white;
+  font-weight: 100;
+  text-shadow: 0 0 1px black;
+}
+
+/* Keydates Section End*/
+
+/* About Section  */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.about > div {
+  position: relative;
+  flex: 1;
+}
+
+.about > div > img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+}
+
+.about > div > div {
+  padding: 20px;
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 0 black;
+  position: absolute;
+  width: 60vw;
+  position: absolute;
+  left: 2%;
+  bottom: 5%;
+  color: white;
+  font-size: 1.5em;
+  /* font-weight: 400; */
+  user-select: none;
+  /* text-align: justify; */
+}
+.about > div > div > h1 {
+  color: orange;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+/* About Section  End*/
+
+footer {
+  width: 100%;
+  padding: 25px;
+  background-color: black;
+  color: white;
+}
+footer > ul {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer > ul > li {
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  /* Home */
+
+  .nav_header {
+    height: 60px;
+    flex-direction: column;
+    transition: all ease 0.5s;
+    align-items: unset;
+  }
+  .nav_header > nav {
+    display: none;
+    padding: unset;
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav_header > nav > a {
+    display: none;
+    background-color: unset !important;
+    margin: 10px;
+    width: 80%;
+    text-align: start;
+  }
+  .nav_header > nav > a:hover,
+  .active {
+    background-color: unset !important;
+    padding: 14px 15px;
+    border-bottom: 2px solid;
+    border-radius: 2px;
+  }
+  .nav_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    margin: 15px !important;
+    padding: unset !important;
+    width: auto !important;
+    display: block !important;
+  }
+  .nav_header > nav > .nav_menu:hover {
+    width: auto;
+    background-color: unset !important;
+    padding: unset !important;
+    margin: 15px !important;
+    border-bottom: unset !important;
+    border-radius: unset !important;
+  }
+
+  /* Tracks section */
+
+  .tracks {
+    flex-direction: column;
+    padding: 10vh 0 10vh 5vh;
+    overflow: hidden;
+  }
+
+  .tracks > div {
+    flex-direction: column;
+  }
+
+  .tracks > div:nth-child(1) {
+    border-radius: 50px 0 0 0px;
+  }
+
+  .tracks > div:nth-child(2) {
+    border-radius: 0px 0 0 50px;
+  }
+
+  .tracks > div > div:nth-child(2) > img {
+    padding: 25px;
+  }
+  /* Tracks section */
+
+  /* keynoteSpeaker Section */
+  .keynoteSpeaker > div {
+    flex-direction: column;
+  }
+
+  /* keynoteSpeaker Section End*/
+
+  /* Keydates Section */
+
+  .keydate {
+    padding: 20px;
+  }
+
+  .keydate > div > table {
+    width: 100%;
+  }
+
+  /* Keydates Section End*/
+
+  .about {
+    padding: unset;
+    display: flex;
+  }
+  .about > div {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .about > div > img {
+    border-radius: 15px;
+    opacity: unset;
+  }
+  .about > div > div {
+    position: unset;
+    padding: unset;
+    width: unset;
+    font-size: unset;
+    box-shadow: unset;
+  }
+  .about > div > div > h1 {
+    margin-top: 10px;
+  }
+
+  /* section 3 End*/
+  /* fotter */
+  footer {
+    padding: 30px;
+  }
+  footer > ul > li {
+    margin: 10px;
+    padding: 10px;
+  }
+  /* fotter End*/
+}
