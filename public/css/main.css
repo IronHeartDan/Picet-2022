@@ -103,7 +103,7 @@ section {
 /* Home section */
 
 .home {
-  background-image: url("../asset/home_bg.jpg");
+  background-image: url("../asset/conference.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -264,48 +264,77 @@ section {
 
 /* keynoteSpeaker Section End*/
 
+/* committe Section */
+
+.committe {
+  height: calc(100vh - 60px);
+  padding: 50px;
+}
+
+.committe > div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(60deg, red, blue, orange);
+  background-size: 200% 100%;
+  border-radius: 50px 50px;
+  /* box-shadow: 0 0 5px black; */
+  animation: animateBg 4s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.committe > div > h1 {
+  display: none;
+  text-align: center;
+}
+
+/* committe Section End*/
+
 /* Keydates Section */
 
-.keydate {
+.tabularSection {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 50px;
-  box-shadow: 0 0 2px black;
 }
 
-.keydate > h1 {
+.tabularSection > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabularSection > div > h1 {
   padding: 20px;
   font-size: 2em;
 }
 
-.keydate > div {
+.tabularSection > div > div {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.keydate > div > table {
-  width: 40vw;
-}
-
-.keydate > div > table > tbody > tr:nth-child(odd) {
+.tabularSection > div > div > table > tbody > tr:nth-child(odd) {
   background-color: darkgray;
 }
 
-.keydate > div > table > tbody > tr:nth-child(even) {
+.tabularSection > div > div > table > tbody > tr:nth-child(even) {
   background-color: orange;
 }
 
-.keydate > div > table,
+.tabularSection > div > div > table,
 th,
 td {
   border: 1px solid white;
-  border-collapse: collapse;
-  padding: 10px;
+  border-collapse: separate;
+  padding: 20px;
   color: white;
   font-weight: 100;
   text-shadow: 0 0 1px black;
@@ -456,11 +485,12 @@ footer > ul > li {
 
   /* Keydates Section */
 
-  .keydate {
+  .tabularSection {
     padding: 20px;
+    flex-direction: column;
   }
 
-  .keydate > div > table {
+  .tabularSection > div > div > table {
     width: 100%;
   }
 
