@@ -42,14 +42,15 @@ body::-webkit-scrollbar {
   position: fixed;
   top: 0;
   width: 100%;
-  /* background-color: #a4b0be; */
-  backdrop-filter: blur(20px);
+  background-color: transparent;
+  transition: all linear 0.25s;
+  /* backdrop-filter: blur(20px); */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: auto;
   z-index: 1000;
-  background-color: transparent;
+  /* background-color: transparent; */
   height: 60px;
 }
 
@@ -81,7 +82,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: white;
   padding: 15px;
-  transition: background-color ease 0.25s;
+  text-shadow: 0 0 2px black;
   font-size: large;
   min-width: max-content;
   /* mix-blend-mode: difference; */
@@ -265,13 +266,12 @@ section {
 /* keynoteSpeaker Section End*/
 
 /* committe Section */
-.committe  {
+.committe {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .committe > h1 {
@@ -283,11 +283,14 @@ section {
   padding: 50px;
 }
 
-.committe > div > ul{
+.committe > div > ul {
   padding: 10px;
 }
 
-.committe > div > ul > li{
+.committe > div > ul > li {
+  padding: 10px;
+}
+.committe > div > ul > h4 {
   padding: 10px;
 }
 
@@ -368,7 +371,7 @@ td {
   left: 2%;
   bottom: 5%;
   color: white;
-  font-size: 1.5em;
+
   /* font-weight: 400; */
   user-select: none;
   /* text-align: justify; */
@@ -400,6 +403,51 @@ footer > ul > li {
 }
 
 @media (max-width: 1200px) {
+  /* Tracks section */
+
+  .tracks {
+    flex-direction: column;
+    padding: 10vh 0 10vh 5vh;
+    overflow: hidden;
+  }
+
+  .tracks > div {
+    flex-direction: column;
+  }
+
+  .tracks > div:nth-child(1) {
+    border-radius: 50px 0 0 0px;
+  }
+
+  .tracks > div:nth-child(2) {
+    border-radius: 0px 0 0 50px;
+  }
+
+  .tracks > div > div:nth-child(2) > img {
+    padding: 25px;
+  }
+  /* Tracks section */
+  /* Keydates Section */
+
+  .tabularSection {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .tabularSection > div > div > table {
+    width: 100%;
+  }
+
+  .tabularSection > div > div > table,
+  th,
+  td {
+    padding: 15px;
+  }
+
+  /* Keydates Section End*/
+}
+
+@media (max-width: 800px) {
   /* Home */
 
   .nav_header {
@@ -447,31 +495,6 @@ footer > ul > li {
     border-radius: unset !important;
   }
 
-  /* Tracks section */
-
-  .tracks {
-    flex-direction: column;
-    padding: 10vh 0 10vh 5vh;
-    overflow: hidden;
-  }
-
-  .tracks > div {
-    flex-direction: column;
-  }
-
-  .tracks > div:nth-child(1) {
-    border-radius: 50px 0 0 0px;
-  }
-
-  .tracks > div:nth-child(2) {
-    border-radius: 0px 0 0 50px;
-  }
-
-  .tracks > div > div:nth-child(2) > img {
-    padding: 25px;
-  }
-  /* Tracks section */
-
   /* keynoteSpeaker Section */
   .keynoteSpeaker > div {
     flex-direction: column;
@@ -479,15 +502,43 @@ footer > ul > li {
 
   /* keynoteSpeaker Section End*/
 
+  .home .content > h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+
+  .home .content > p {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+
   /* Keydates Section */
 
   .tabularSection {
-    padding: 20px;
+    padding: unset;
     flex-direction: column;
   }
 
+  .tabularSection > div {
+    align-items: center;
+  }
+
+  .tabularSection > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: scroll;
+  }
   .tabularSection > div > div > table {
     width: 100%;
+    max-width: 550px;
+  }
+
+  .tabularSection > div > div > table,
+  th,
+  td {
+    padding: 2px;
   }
 
   /* Keydates Section End*/
