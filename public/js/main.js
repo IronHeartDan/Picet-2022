@@ -1,6 +1,5 @@
-let mobile = false;
 window.onload = (e) => {
-  let date = new Date("Jan 5, 2022 15:37:25").getTime();
+  let date = new Date("May 13, 2022 00:00:00").getTime();
   setInterval(() => {
     let now = new Date().getTime();
     let distance = date - now;
@@ -38,36 +37,28 @@ window.onload = (e) => {
   //   magic.observe(e);
   // });
 
-  if (window.outerWidth < 400) {
-    mobile = true;
-  } else {
-    mobile = false;
-  }
-
+  // Nav
   let items = document.getElementsByClassName("menu_item");
   Array.from(items).forEach((item) => {
     item.addEventListener("click", (e) => {
-      console.log(mobile);
-      if (mobile) {
-        toggleMenu(false);
-      }
-
       Array.from(items).forEach((item) => {
         item.classList.remove("active");
       });
       item.classList.add("active");
     });
   });
-};
 
-window.onresize = (e) => {
-  console.log(window.outerWidth);
-  if (window.outerWidth < 400) {
-    mobile = true;
-  } else {
-    mobile = false;
-  }
-  console.log("From Resize", mobile);
+  // Mobile Nav
+  let mitems = document.getElementsByClassName("m_menu_item");
+  Array.from(mitems).forEach((item) => {
+    item.addEventListener("click", (e) => {
+      toggleMenu(false);
+      Array.from(mitems).forEach((item) => {
+        item.classList.remove("active");
+      });
+      item.classList.add("active");
+    });
+  });
 };
 
 function scrollToTop() {
@@ -91,19 +82,14 @@ document.onscroll = (e) => {
   }
 };
 
-document.onresize = (e) => {
-  console.log(e);
-};
-
 function toggleMenu(show) {
-  let nav = document.getElementById("nav_menu");
-  let con = document.getElementById("nav_header");
-  let items = document.getElementsByClassName("menu_item");
-  let itemsCon = document.getElementById("nav_itemCon");
+  let nav = document.getElementById("m_nav_menu");
+  let con = document.getElementById("m_nav_header");
+  let items = document.getElementsByClassName("m_menu_item");
+  let itemsCon = document.getElementById("m_nav_itemCon");
 
   if (show) {
     document.body.style.overflow = "hidden";
-    // con.style.backgroundColor = "#3aafa9";
     con.style.height = "100vh";
     con.style.alignItems = "center";
     itemsCon.style.display = "flex";

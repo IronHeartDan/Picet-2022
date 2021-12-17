@@ -38,6 +38,10 @@ body::-webkit-scrollbar {
   transition: all ease-in-out 0.25s;
 }
 
+.m_nav_header {
+  display: none;
+}
+
 .nav_header {
   position: fixed;
   top: 0;
@@ -92,10 +96,6 @@ body::-webkit-scrollbar {
 .nav_header > nav > a:hover,
 .active {
   border-bottom: 2px solid white;
-}
-
-.nav_menu {
-  display: none;
 }
 
 section {
@@ -465,32 +465,38 @@ footer > ul > li {
   /* Home */
 
   .nav_header {
+    display: none;
+  }
+
+  /* Here */
+  .m_nav_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    z-index: 1000;
+    box-shadow: 0 0 5px black;
     height: 60px;
     flex-direction: column;
     transition: all ease 0.5s;
     align-items: unset;
   }
-  .nav_header > nav {
-    display: none;
-    padding: unset;
-    width: 100%;
-    flex-direction: column;
-  }
-  .nav_header > nav > a {
-    display: none;
-    background-color: unset !important;
+
+  .m_nav_header > .logo {
     margin: 10px;
-    width: 80%;
-    text-align: start;
+    width: 100px;
+    pointer-events: none;
   }
-  .nav_header > nav > a:hover,
-  .active {
-    background-color: unset !important;
-    padding: 14px 15px;
-    border-bottom: 2px solid;
-    border-radius: 2px;
+
+  .m_nav_header > .logo > img {
+    width: 100%;
+    object-fit: contain;
   }
-  .nav_menu {
+
+  .m_nav_menu {
     position: absolute;
     top: 0;
     right: 0;
@@ -500,14 +506,41 @@ footer > ul > li {
     width: auto !important;
     display: block !important;
   }
-  .nav_header > nav > .nav_menu:hover {
-    width: auto;
-    background-color: unset !important;
-    padding: unset !important;
-    margin: 15px !important;
-    border-bottom: unset !important;
-    border-radius: unset !important;
+
+  .m_nav_header > nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+    display: none;
+    padding: unset;
+    width: 100%;
+    flex-direction: column;
   }
+
+  .m_nav_header > nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .m_nav_header > nav > a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: large;
+    min-width: max-content;
+    display: none;
+    background-color: unset !important;
+    margin: 10px;
+    width: 80%;
+    text-align: start;
+  }
+
+  .m_nav_header > nav > .active {
+    border-bottom: 2px solid white;
+  }
+  /* Here End */
 
   /* keynoteSpeaker Section */
   .keynoteSpeaker > div {
