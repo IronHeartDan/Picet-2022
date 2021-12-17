@@ -1,4 +1,6 @@
 window.onload = (e) => {
+  let platform = navigator.userAgent;
+  console.log(platform);
   let date = new Date("May 13, 2022 00:00:00").getTime();
   setInterval(() => {
     let now = new Date().getTime();
@@ -68,15 +70,17 @@ function scrollToTop() {
 
 document.onscroll = (e) => {
   let scrollToTop = document.getElementById("scrollToTop");
-  let con = document.getElementById("nav_header");
+  let con = document.getElementById("m_nav_header");
 
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
+    con.style.visibility = "visible";
     scrollToTop.style.opacity = 1;
     scrollToTop.style.transform = "scale(1)";
   } else {
+    con.style.visibility = "hidden";
     scrollToTop.style.opacity = 0;
     scrollToTop.style.transform = "scale(0)";
   }

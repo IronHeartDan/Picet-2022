@@ -107,9 +107,8 @@ section {
 
 .home {
   background-image: url("../asset/bg_home.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   min-height: 85vh;
 }
 
@@ -180,7 +179,7 @@ section {
   min-height: calc(100vh - 60px);
   display: flex;
   background-color: orange;
-  padding: 10vh 0 10vh 10vh;
+  padding: 10vh 0 5vh 5vh;
   z-index: -1;
 }
 
@@ -188,32 +187,35 @@ section {
   position: relative;
   min-height: 80vh;
   width: 100vw;
-  padding: 50px;
+  padding: 50px 30px;
   display: flex;
   background-color: white;
   box-shadow: 0 0 2px black;
 }
 
-.tracks > div:nth-child(1) {
-  border-radius: 50px 0 0 50px;
+.tracks > div > div > h4 {
+  line-height: 2;
 }
 
-.tracks > div > div > h1 {
-  padding: 10px;
+.tracks > div:nth-child(1) {
+  border-radius: 30px 0 0 30px;
 }
 
 .tracks > div > div > ul {
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  max-height: min-content;
 }
 
 .tracks > div > div > ul > li {
-  padding: 5px;
-  font-size: medium;
+  padding: 10px 5px;
+  font-size: small;
 }
 .tracks > div > div:nth-child(2) {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .tracks > div > div:nth-child(2) > img {
   max-width: 350px;
@@ -277,7 +279,6 @@ section {
 
 /* committe Section */
 .committe {
-  /* width: 10vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +291,7 @@ section {
 }
 
 .committe > div {
-  padding: 10px;
+  padding: 50px;
 }
 
 .committe > div > ul {
@@ -356,52 +357,37 @@ td {
 .about {
   display: flex;
   flex-direction: column;
-  background-color: black;
-}
-
-.about > div {
-  position: relative;
-  flex: 1;
-}
-
-.about > div > img {
-  width: 100%;
-  max-height: 650px;
-  object-fit: cover;
-  opacity: 0.75;
-}
-
-.about > div > div {
+  background-image: url("../asset/asset_two.jpg");
+  background-size: cover;
+  min-height: 80vh;
+  overflow: hidden;
   padding: 20px;
-  backdrop-filter: blur(50px);
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px 0 black;
-  width: 60vw;
+}
+.about > img {
+  display: none;
+}
+.about > div {
+  padding: 20px;
   position: absolute;
-  left: 2%;
   bottom: 5%;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  max-width: 60vw;
   color: white;
-  text-align: justify;
-
-  /* font-weight: 400; */
-  user-select: none;
-  /* text-align: justify; */
 }
-.about > div > div > h1 {
+.about > div > h1 {
   color: orange;
-  margin-bottom: 50px;
-  /* line-height: 2; */
-  /* text-decoration: underline; */
+  margin-bottom: 20px;
 }
 
-.about > div > div > p {
-  line-height: 2;
+.about > div > p {
+  line-height: 1;
 }
 /* About Section  End*/
 
 footer {
   width: 100%;
-  padding: 25px;
+  padding: 20px;
   background-color: orange;
   color: white;
 }
@@ -411,10 +397,8 @@ footer > ul {
   align-items: center;
   flex-wrap: wrap;
 }
-
-footer > ul > li {
-  margin: 10px;
-  padding: 10px;
+footer > ul > li > p {
+  max-width: 250px;
 }
 
 @media (max-width: 1200px) {
@@ -462,7 +446,7 @@ footer > ul > li {
   /* Keydates Section End*/
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 900px) {
   /* Home */
 
   .nav_header {
@@ -482,7 +466,8 @@ footer > ul > li {
     box-shadow: 0 0 5px black;
     height: 60px;
     flex-direction: column;
-    transition: all ease 0.5s;
+    transition: all linear 0.25s;
+    visibility: hidden;
     align-items: unset;
   }
 
@@ -550,6 +535,10 @@ footer > ul > li {
 
   /* keynoteSpeaker Section End*/
 
+  .home{
+    background-attachment: scroll;
+  }
+
   .home .content > h1 {
     font-size: 2.5em;
     font-weight: 400;
@@ -557,8 +546,18 @@ footer > ul > li {
 
   .home .content > p {
     font-size: 1.5em;
-    line-height: 1;
+    line-height: 1.2;
   }
+
+  /* Tracks Section */
+  .tracks > div {
+    padding: 30px;
+  }
+
+  .tracks > div > div > ul {
+    grid-template-columns: unset;
+  }
+  /* Tracks Section End*/
 
   /* Keydates Section */
 
@@ -578,6 +577,10 @@ footer > ul > li {
     width: 100%;
     overflow: scroll;
   }
+
+  .tabularSection > div > div::-webkit-scrollbar {
+    display: none;
+  }
   .tabularSection > div > div > table {
     width: 100%;
     max-width: 550px;
@@ -587,33 +590,33 @@ footer > ul > li {
   th,
   td {
     padding: 2px;
+    font-size: small;
   }
 
   /* Keydates Section End*/
 
   .about {
-    padding: unset;
     display: flex;
-    background-color: unset;
-  }
-  .about > div {
-    flex-direction: column;
-    padding: 30px;
+    align-items: center;
+    background-image: unset;
   }
 
-  .about > div > img {
+  .about > img {
+    display: block;
     border-radius: 15px;
     opacity: unset;
+    object-fit: contain;
+    max-width: 400px;
   }
-  .about > div > div {
+  .about > div {
     position: unset;
     padding: unset;
-    width: unset;
+    max-width: unset;
     font-size: unset;
     box-shadow: unset;
     color: unset;
   }
-  .about > div > div > h1 {
+  .about > div > h1 {
     margin-top: 15px;
     margin-bottom: 10px;
   }
