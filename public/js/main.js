@@ -1,5 +1,28 @@
 let mobile = false;
 window.onload = (e) => {
+  let date = new Date("Jan 5, 2022 15:37:25").getTime();
+  setInterval(() => {
+    let now = new Date().getTime();
+    let distance = date - now;
+    // Time calculations for days, hours, minutes and seconds
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    let daysCon = document.getElementById("days");
+    let hoursCon = document.getElementById("hours");
+    let minutesCon = document.getElementById("minutes");
+    let secondsCon = document.getElementById("seconds");
+
+    daysCon.innerHTML = days;
+    hoursCon.innerHTML = hours;
+    minutesCon.innerHTML = minutes;
+    secondsCon.innerHTML = seconds;
+  }, 1000);
+
   // let magic = new IntersectionObserver((entries) => {
   //   if (entries[0].intersectionRatio > 0) {
   //     entries[0].target.style.animation = "PopLeft  ease 250ms 0s";
@@ -60,11 +83,9 @@ document.onscroll = (e) => {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    con.style.backgroundColor = "#181D31";
     scrollToTop.style.opacity = 1;
     scrollToTop.style.transform = "scale(1)";
   } else {
-    con.style.backgroundColor = "transparent";
     scrollToTop.style.opacity = 0;
     scrollToTop.style.transform = "scale(0)";
   }
@@ -82,7 +103,7 @@ function toggleMenu(show) {
 
   if (show) {
     document.body.style.overflow = "hidden";
-    con.style.backgroundColor = "#3aafa9";
+    // con.style.backgroundColor = "#3aafa9";
     con.style.height = "100vh";
     con.style.alignItems = "center";
     itemsCon.style.display = "flex";
@@ -95,14 +116,6 @@ function toggleMenu(show) {
     document.body.style.overflow = "auto";
     con.style.alignItems = "unset";
     itemsCon.style.display = "none";
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 100
-    ) {
-      con.style.backgroundColor = "#181D31";
-    } else {
-      con.style.backgroundColor = "transparent";
-    }
     con.style.height = "60px";
     nav.href = "javascript:toggleMenu(true)";
     nav.innerHTML = "<img src='./asset/menu.svg' alt='menu' />";
