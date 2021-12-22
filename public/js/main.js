@@ -1,4 +1,12 @@
 window.onload = (e) => {
+  // document
+  //   .querySelector("meta[name=viewport]")
+  //   .setAttribute(
+  //     "content",
+  //     `"content=width=device-width, initial-scale=${
+  //       2 / window.devicePixelRatio
+  //     }"`
+  //   );
   let platform = navigator.userAgent;
   console.log(platform);
   let date = new Date("May 13, 2022 00:00:00").getTime();

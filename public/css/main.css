@@ -112,13 +112,6 @@ section {
   min-height: 85vh;
 }
 
-/* .home > img {
-  width: 100%;
-  max-height: 80vh;
-  object-fit: cover;
-  
-} */
-
 .home .content {
   position: absolute;
   top: 50%;
@@ -130,7 +123,7 @@ section {
 .home .content > h1 {
   color: orange;
   font-size: 3em;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 50px;
   max-width: max-content;
   text-shadow: 0 0 10px black;
@@ -176,16 +169,14 @@ section {
 
 .tracks {
   position: relative;
-  min-height: calc(100vh - 60px);
   display: flex;
   background-color: orange;
-  padding: 10vh 0 5vh 5vh;
+  padding: 10vh 0 2vh 2vh;
   z-index: -1;
 }
 
 .tracks > div {
   position: relative;
-  min-height: 80vh;
   width: 100vw;
   padding: 50px 30px;
   display: flex;
@@ -201,24 +192,19 @@ section {
   border-radius: 30px 0 0 30px;
 }
 
+.tracks > div > div  {
+  width: 100%;
+}
+
 .tracks > div > div > ul {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  max-height: min-content;
-}
+} 
 
 .tracks > div > div > ul > li {
   padding: 10px 5px;
   font-size: small;
-}
-.tracks > div > div:nth-child(2) {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.tracks > div > div:nth-child(2) > img {
-  max-width: 350px;
 }
 
 /* Tracks section */
@@ -254,18 +240,7 @@ section {
   padding: 10px;
   backdrop-filter: blur(10px);
   transition: all ease 0.5s;
-  /* animation: speakers 1.5s infinite alternate-reverse ease-in-out; */
 }
-
-@keyframes speakers {
-  from {
-    box-shadow: 0 0 5px black;
-  }
-  to {
-    box-shadow: 0 0 50px orange;
-  }
-}
-
 .keynoteSpeaker > div > div > p {
   font-size: 2em;
   margin-top: 10px;
@@ -313,7 +288,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 20px 50px;
 }
 
 .tabularSection > div {
@@ -323,7 +298,7 @@ section {
 }
 
 .tabularSection > div > h1 {
-  padding: 20px;
+  padding: 10px;
   font-size: 2em;
 }
 
@@ -339,15 +314,18 @@ section {
   background-color: orange;
 }
 
+.tabularSection > div > div > table{
+  height: 100%;
+}
 .tabularSection > div > div > table,
 th,
 td {
   border: 1px solid white;
-  border-collapse: separate;
-  padding: 20px;
+  border-collapse: collapse;
+  padding: 15px;
   color: white;
   font-weight: 100;
-  text-shadow: 0 0 1px black;
+  text-shadow: 0 0 2px black;
 }
 
 /* Keydates Section End*/
@@ -401,7 +379,7 @@ footer > ul > li > p {
   max-width: 250px;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   /* Tracks section */
 
   .tracks {
@@ -446,7 +424,7 @@ footer > ul > li > p {
   /* Keydates Section End*/
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   /* Home */
 
   .nav_header {
@@ -557,6 +535,10 @@ footer > ul > li > p {
   .tracks > div > div > ul {
     grid-template-columns: unset;
   }
+
+  .tracks > div > div > ul >li{
+    padding: 5px;
+  }
   /* Tracks Section End*/
 
   /* Keydates Section */
@@ -606,7 +588,7 @@ footer > ul > li > p {
     border-radius: 15px;
     opacity: unset;
     object-fit: contain;
-    max-width: 400px;
+    max-width: 100%;
   }
   .about > div {
     position: unset;
