@@ -1,4 +1,15 @@
 window.onload = (e) => {
+  // Set Image
+  setTimeout(() => {
+    let con = document.getElementById("home");
+    let img = document.createElement("img");
+    img.onload = () => {
+      con.style.backgroundImage = `url(${img.src})`;
+    };
+    con.style.filter = "unset";
+    img.src = "./asset/bg_home.jpg";
+  }, 1500);
+
   // document
   //   .querySelector("meta[name=viewport]")
   //   .setAttribute(
@@ -7,6 +18,7 @@ window.onload = (e) => {
   //       2 / window.devicePixelRatio
   //     }"`
   //   );
+
   let platform = navigator.userAgent;
   console.log(platform);
   let date = new Date("May 13, 2022 00:00:00").getTime();
