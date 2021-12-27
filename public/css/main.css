@@ -160,6 +160,7 @@ section {
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 0 5px black;
+  z-index: 1;
 }
 
 .home .countDown > div {
@@ -170,48 +171,49 @@ section {
 
 /* Home section End*/
 
-/* Tracks section */
+/* themes section */
 
-.tracks {
-  position: relative;
-  display: flex;
+.themes {
   background-color: orange;
   padding: 10vh 0 2vh 2vh;
-  z-index: -1;
 }
 
-.tracks > div {
-  position: relative;
-  width: 100vw;
-  padding: 50px 30px;
-  display: flex;
+.themes > div {
+  padding: 50px;
+  border-radius: 20px 0 0 20px;
   background-color: white;
-  box-shadow: 0 0 2px black;
 }
 
-.tracks > div > div > h4 {
-  line-height: 2;
-}
-
-.tracks > div:nth-child(1) {
-  border-radius: 30px 0 0 30px;
-}
-
-.tracks > div > div {
-  width: 100%;
-}
-
-.tracks > div > div > ul {
+.themes > div > h1 {
   padding: 10px;
-  columns: 2;
 }
 
-.tracks > div > div > ul > li {
-  padding: 10px 5px;
-  font-size: small;
+.themes > div > ul {
+  padding: 10px;
 }
 
-/* Tracks section */
+.themes > div > ul > li {
+  background-color: #ccc;
+  border-left: 5px solid #232323;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.themes > div > ul > li > div {
+  height: 0;
+  overflow: hidden;
+  transition: all ease-in 0.25s;
+}
+
+.themes > div > ul > li:hover .theme__details,
+.themes > div > ul > li:focus .theme__details {
+  margin-top: 10px;
+  height: 100px;
+  overflow: auto;
+}
+
+/* themes section */
 
 /* keynoteSpeaker Section */
 
@@ -221,38 +223,50 @@ section {
 }
 
 .keynoteSpeaker > h1 {
-  padding: 20px;
+  padding: 50px;
   font-size: 2em;
 }
 
 .keynoteSpeaker > div {
+  height: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  padding: 25px;
+  background-image: url("../asset/asset_one.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .keynoteSpeaker > div > div {
   flex: 1;
-  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 600px;
   user-select: none;
+  box-shadow: 0 0 5px black;
+  color: white;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 20px;
 }
 
 .keynoteSpeaker > div > div > img {
-  user-select: none;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  box-shadow: 0 0 5px black;
-  padding: 10px;
-  backdrop-filter: blur(10px);
-  transition: all ease 0.5s;
+  z-index: 1;
 }
 .keynoteSpeaker > div > div > p {
-  font-size: 2em;
-  margin-top: 10px;
+  font-size: 1.75em;
+  margin: 10px 0;
 }
 
-.keynoteSpeaker > div > div > h4 {
-  line-height: 2;
+.keynoteSpeaker > div > div > span {
+  display: block;
+  margin: 10px;
 }
 
 /* keynoteSpeaker Section End*/
@@ -384,7 +398,6 @@ td {
   text-align: center;
 }
 
-
 .callForPapers > div > h1,
 .callForPapers > div > ul {
   padding: 50px 10px 25px 10px;
@@ -396,30 +409,30 @@ td {
   padding: 10px;
 }
 
-.callForPapers > div:nth-child(4){
+.callForPapers > div:nth-child(3) {
   padding: unset;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.callForPapers > div > a{
+.callForPapers > div > a {
   margin: 0 auto;
   border: 2px solid orange;
   padding: 1em 2.5em;
   text-decoration: none;
   color: white;
   background-color: orange;
-  transition: all ease .25s;
+  transition: all ease 0.25s;
   border-radius: 2px;
   box-shadow: 0 0 5px black;
 }
 
 .callForPapers > div > a:hover,
-.callForPapers > div > a:focus{
+.callForPapers > div > a:focus {
   background-color: white;
   color: orange;
-  box-shadow:unset;
+  box-shadow: unset;
 }
 
 /* callForPapers Section End*/
@@ -457,30 +470,9 @@ footer > ul > li > p {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* Tracks section */
+  /* themes section */
 
-  .tracks {
-    flex-direction: column;
-    padding: 10vh 0 5vh 2vh;
-    overflow: hidden;
-  }
-
-  .tracks > div {
-    flex-direction: column;
-  }
-
-  .tracks > div:nth-child(1) {
-    border-radius: 50px 0 0 0px;
-  }
-
-  .tracks > div:nth-child(2) {
-    border-radius: 0px 0 0 50px;
-  }
-
-  .tracks > div > div:nth-child(2) > img {
-    padding: 25px;
-  }
-  /* Tracks section */
+  /* themes section */
   /* Keydates Section */
 
   .tabularSection {
@@ -585,7 +577,7 @@ footer > ul > li > p {
 
   /* keynoteSpeaker Section */
   .keynoteSpeaker > div {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .keynoteSpeaker > div > div > img {
@@ -618,19 +610,18 @@ footer > ul > li > p {
     line-height: 1.2;
   }
 
-  /* Tracks Section */
-  .tracks > div {
-    padding: 30px;
+  /* themes Section */
+
+  .themes > div {
+    padding: 25px 0 25px 25px;
   }
 
-  .tracks > div > div > ul {
-    columns: 1;
+  .themes > div > ul > li {
+    text-transform: lowercase;
+    padding: 10px;
   }
 
-  .tracks > div > div > ul > li {
-    padding: 5px;
-  }
-  /* Tracks Section End*/
+  /* themes Section End*/
 
   /* Keydates Section */
 
@@ -677,7 +668,8 @@ footer > ul > li > p {
     display: flex;
     align-items: center;
     background-image: unset;
-    padding: 10px;
+    padding: 20px;
+    user-select: none;
   }
 
   .about > img {
