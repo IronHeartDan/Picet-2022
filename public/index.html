@@ -1,704 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PiCET</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="scrollToTop" id="scrollToTop" onclick="scrollToTop()">
-      <img src="./asset/arrow_upward.svg" alt="scrollToTop" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PiCET</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/main.js"></script>
+</head>
+
+<body ontouchstart="">
+  <div class="scrollToTop" id="scrollToTop" onclick="scrollToTop()">
+    <img src="./asset/arrow_upward.svg" alt="scrollToTop" />
+  </div>
+  <header class="m_nav_header" id="m_nav_header">
+    <div class="logo">
+      <img src="./asset/pu_logo.png" alt="logo" loading="lazy" />
     </div>
-    <header class="m_nav_header" id="m_nav_header">
-      <div class="logo">
-        <img src="./asset/pu_logo.png" alt="logo"  loading="lazy"/>
-      </div>
-      <nav id="m_nav_itemCon">
-        <a href="#home" class="m_menu_item active">Home</a>
-        <a href="#themes" class="m_menu_item">themes</a>
-        <a href="#keynoteSpeaker" class="m_menu_item">Keynote Speaker</a>
-        <a href="#committe" class="m_menu_item">Committees</a>
-        <a href="#tabularSection" class="m_menu_item">Key Dates</a>
-        <a href="#callForPapers" class="m_menu_item">Call For Papers</a>
-        <a href="#" class="m_menu_item">Publications</a>
-        <a href="https://www.easychair.org/" target="_blank" class="m_menu_item">Register</a>
-        <a href="#tabularSection" class="m_menu_item">Registration Fees</a>
-        <!-- <a href="#" class="m_menu_item">Program Schedule</a> -->
-        <!-- <a href="#" class="m_menu_item">Sponsorship</a> -->
-      </nav>
-      <a href="javascript:toggleMenu(true)" class="m_nav_menu" id="m_nav_menu">
-        <img src="./asset/menu.svg" alt="menu" />
-      </a>
-    </header>
-    <header class="nav_header" id="nav_header">
-      <div class="logo">
-        <img src="./asset/pu_logo.png" alt="logo" loading="lazy"/>
-      </div>
-      <nav id="nav_itemCon">
-        <a href="#home" class="menu_item active">Home</a>
-        <a href="#themes" class="menu_item">themes</a>
-        <a href="#keynoteSpeaker" class="menu_item">Keynote Speaker</a>
-        <a href="#committe" class="menu_item">Committees</a>
-        <a href="#tabularSection" class="menu_item">Key Dates</a>
-        <a href="#callForPapers" class="menu_item">Call For Papers</a>
-        <a href="#" class="menu_item">Publications</a>
-        <a href="https://www.easychair.org/" target="_blank" class="menu_item">Register</a>
-        <a href="#tabularSection" class="menu_item">Registration Fees</a>
-        <!-- <a href="#" class="menu_item">Program Schedule</a> -->
-        <!-- <a href="#" class="menu_item">Sponsorship</a> -->
-      </nav>
-    </header>
-    <section class="home" id="home">
-      <!-- <img src="./asset/home_bg.jpg" alt="" /> -->
-      <div class="content">
-        <h1>PiCET 2022</h1> 
-        <p>
-          4th International Conference </p>
+    <nav id="m_nav_itemCon">
+      <a href="#home" class="m_menu_item active">Home</a>
+      <a href="#themes" class="m_menu_item">Themes</a>
+      <a href="#keynoteSpeaker" class="m_menu_item">Keynote Speaker</a>
+      <a href="#committe" class="m_menu_item">Committees</a>
+      <a href="#tabularSection" class="m_menu_item">Key Dates</a>
+      <a href="#callForPapers" class="m_menu_item">Call For Papers</a>
+      <a href="#" class="m_menu_item">Publications</a>
+      <a href="https://easychair.org/conferences/?conf=picet2022" target="_blank" class="m_menu_item">Register</a>
+      <a href="#tabularSection" class="m_menu_item">Registration Fees</a>
+      <!-- <a href="#" class="m_menu_item">Program Schedule</a> -->
+      <!-- <a href="#" class="m_menu_item">Sponsorship</a> -->
+    </nav>
+    <a href="javascript:toggleMenu(true)" class="m_nav_menu" id="m_nav_menu">
+      <img src="./asset/menu.svg" alt="menu" />
+    </a>
+  </header>
+  <header class="nav_header" id="nav_header">
+    <div class="logo">
+      <img src="./asset/pu_logo.png" alt="logo" loading="lazy" />
+    </div>
+    <nav id="nav_itemCon">
+      <a href="#home" class="menu_item active">Home</a>
+      <a href="#themes" class="menu_item">Themes</a>
+      <a href="#keynoteSpeaker" class="menu_item">Keynote Speaker</a>
+      <a href="#committe" class="menu_item">Committees</a>
+      <a href="#tabularSection" class="menu_item">Key Dates</a>
+      <a href="#callForPapers" class="menu_item">Call For Papers</a>
+      <a href="#" class="menu_item">Publications</a>
+      <a href="https://easychair.org/conferences/?conf=picet2022" target="_blank" class="menu_item">Register</a>
+      <a href="#tabularSection" class="menu_item">Registration Fees</a>
+      <!-- <a href="#" class="menu_item">Program Schedule</a> -->
+      <!-- <a href="#" class="menu_item">Sponsorship</a> -->
+    </nav>
+  </header>
+  <section class="home" id="home">
+    <!-- <img src="./asset/home_bg.jpg" alt="" /> -->
+    <div class="content">
+      <h1>PiCET 2022</h1>
+      <p>
+        4th International Conference </p>
 
-          <p>
-            Parul University International Conference on Engineering &
-            Technology</p
-          >
+      <p>
+        Parul University International Conference on Engineering &
+        Technology</p>
 
-          <p>13th-14th May 2022</p>
-        </p>
-      </div>
-      <div class="countDown">
-        <div>
-          <h2 id="days">00</h2>
-          <span>Days</span>
-        </div>
-        <div>
-          <h2 id="hours">00</h2>
-          <span>Hours</span>
-        </div>
-        <div>
-          <h2 id="minutes">00</h2>
-          <span>Mins</span>
-        </div>
-        <div>
-          <h2 id="seconds">00</h2>
-          <span>Secs</span>
-        </div>
-      </div>
-    </section>
-    <section class="themes" id="themes">
+      <p>13th-14th May 2022</p>
+      </p>
+    </div>
+    <div class="countDown">
       <div>
-        <h1>Themes</h1>
-        <hr>
-        <ul>
-          <li>
-            ADVANCES IN NETWORKING TECHNOLOGIE
-            <div class="theme__details">
-              This theme covers areas including but not limited to Wired Network, Wireless and Ad-hoc networks, Software Defined Networks, Wireless Sensor Networks, Vehicular Networks, Body Area Networks, Delay Tolerant Networks, Mobile Social Networks, and Internet of Things. Protocols and algorithms for communication, performance enhancement, QoS provisioning and security in these and other networks.
-            </div>
-          </li>
-          <li>MACHINE INTELLIGENCE / COMPUTATIONAL INTELLIGENCE
-             <div class="theme__details">
-              Optimization, Artificial Intelligence, Machine Learning methods / algorithms, Data Mining and Big Data, Pattern Analysis, Soft Computing, Bio-inspired computing, Image Processing, Computer Vision, Biometric security, Speech Analysis, Signal Processing theory and methods, and applications of human brain interactions. Other theory/applications of machine learning and signal processing techniques are also welcome.
-            </div>
-          </li>
-          <li>AUTONOMIC COMPUTING
-             <div class="theme__details">
-              Cluster and grid computing, cloud as a service, applications and infrastructure, edge computing, fog computing, enterprise software and services, multicore systems, computing in Internet of Things and embedded systems, design issues addressing architectural challenges of autonomic computing and its solutions, algorithms, theory and foundations of autonomic computing, applications, security and current trends.
-            </div>
-          </li>
-          <li>CONTROL AND AUTOMATION
-             <div class="theme__details">
-              Researchers from industry and academia are invited to present their research work in the area of Process Modelling, Simulation, Robot Dynamics, Control Algorithms, Vision based Control, Industrial Automation, Control and Optimization under this theme. The present theme also focuses on Fault Detection and Diagnosis. Research on contemporary issues related to process industries are invited under this theme. Apart from above mentioned topics, challenges and solutions of factory automations are also expected under this theme.
-            </div>
-          </li>
-          <li>FUTURISTIC POWER SYSTEM
-             <div class="theme__details">
-              The smart grid, incorporating the distributed generation and electric vehicles (EVs), are in the realization stage. The large power grids are likely to be impacted greatly and the issues of grid stability, grid dynamics and grid monitoring requires considerations. The inclusion of power electronic converters in the form of FACTS devices, the DFIG converters, Battery controllers of EVs, active harmonic compensators etc. brings in newer challenges. The data availability and accumulations, information exchange about the power system and its component behaviour offers big data analytics and interpretation issues. This sub-theme covers the focus on intelligent technological solutions to many such power system problems.
-            </div>
-          </li>
-          <li>CONTROL OF POWER ELECTRONICS CONVERTERS AND DRIVES
-             <div class="theme__details">
-              Due to advancements in power electronic device technology and availability of fast computational processors, Power Electronic Converters have penetrated to all the segments of engineering, where in electrical engineering has a role to play. Also, electrical machine drives are back-bone of industrial processes. Hence, effective control of Power Electronic Converters and Drives will enable technologies and processes which in turn will lead to sustainable development. This theme aims to invite novel topologies, and control strategies of Power Electronic Converters and Drives.
-            </div>
-          </li>
-          <li>ADVANCED ELECTRICAL MACHINES AND SMART APPARATUS
-             <div class="theme__details">
-              Brief description of the theme: The energy efficiency, high power density, compact design and robust control for the electrical machines are the focus of the day. The development in the linear and rotating induction machines with controllers, switched reluctance machines, permanent magnet machines, energy efficient special machines are highly encouraging. The newer material options in transformer technology is turning to be game changer. The inclusion of IoT and embedded systems, variety of sensors in the machine offer insights to the diagnostics as well. The theme aims to invite new design and control approaches of electrical machines as well as new equipment for monitoring of the electrical machines.
-            </div>
-          </li>
-          <li>ELECTRONIC COMMUNICATIONS
-             <div class="theme__details">
-              Contributions based on performance analysis, experimental development and simulation in the areas of optical communication, wired/wireless communication and networks, Ad Hoc Network, sensor networks, Next generation networks, RF and antenna systems, microwave communication, satellite communication, antenna design, cognitive radio, energy harvesting and green communication, Internet of Things (IoT), IoT in urban development, Intelligent transportation system, ICT applications in social upliftment, Navigation system are invited.
-            </div>
-          </li>
-          <li>ELECTRONICS CIRCUITS AND SYSTEM DESIGN
-             <div class="theme__details">
-              Contributions are invited in the areas such as Embedded System Design, Cyber Physical System (CPS), Health and Medical Electronics, Reconfigurable Architecture, Device Modelling and Simulation, Advanced CMOS Devices, Emerging Memory Devices, Analog and Mixed-Signal Circuits, Circuit Timing and Power Models, Low Power and Near/Sub Threshold Circuit Design, Logic and Behavioral Synthesis, Placement, Routing and Floor Planning, Design Automation, Design Verification, Test, Reliability and Fault Tolerance, Formal Verification, Design For Testability, Fault Modelling, Post-Silicon Validation, Testing Memories and Regular Logic Arrays, Design for Manufacturability and Yield Analysis, Device Physics Design and Circuits using Non- Silicon Materials.
-            </div>
-          </li>
-          <li>SIGNAL PROCESSING
-             <div class="theme__details">
-              Contributions are invited in the areas such as Signal Processing for Communications, Image and Video Signal Processing, Multimedia applications, DSP algorithms and architectures, Speech and Speaker identification, Biomedical applications, Language identification, Machine learning, Pattern recognition and classification, Applications in Astronomy/ Astrophysics, Radar and Sonar signal processing.
-            </div>
-          </li>
-          <li>RECENT TRENDS IN APPLIED MATHEMATICS
-             <div class="theme__details">
-              Research in the Mathematics is a key element for the advancement of all areas of science and technology. Being one of the vital areas of science in itself, Pure and Applied Mathematics works in tandem in all the domains of engineering and technology. Moreover, it significantly contributes to research areas like Mathematical Modeling of Industrial Processes and many more of its kind. Need of the hour is to cultivate and sustain core research capability, and at the same time cross the borders to promote transformative and interdisciplinary research. Graph Theory, Modeling and Simulation Bio-Mathematics, Statistical Computation/Optimization Fuzzy logic, Algebra, Number Theory.
-            </div>
-          </li>
-          <li>RECENT TRENDS IN TEACHING-LEARNING IN ENGINEERING EDUCATION
-             <div class="theme__details">
-              Innovative methods in curriculum design and delivery, Social media and teaching-learning, Blended Learning/MOOCs in Engineering Education, Assessing the assessment, Futuristic Trends in Engineering Education, Entrepreneurship and Innovation.
-            </div>
-          </li>
-          <li>ADVANCES IN TRANSPORTATION ENGINEERING
-             <div class="theme__details">
-              Pavement materials, Pavement analysis and design, Traffic operations and management, Transportation economics, Road safety and traffic awareness, Accident analysis, Transportation planning and modelling, Intelligent transportation systems, Sustainable transportation system, Public transportation system, Road construction technology.
-            </div>
-          </li>
-          <li>EMERGING TRENDS IN WATER RESOURCES AND ENVIRONMENTAL ENGINEERING
-            <div class="theme__details">
-              Impact of climate change on water resources, Ground water modeling & management, Hydrological modeling & forecasting, Application of remote sensing & GIS in water resources, Irrigation planning & management, Reservoir operation & optimization, Sustainable development of water resources, Watershed management, Water quality monitoring & assessment, Environment hydraulics, Environmental impact assessment, Water and waste water treatment, Solid waste management, Air and noise pollution, Recycle and reuse of waste.
-            </div>
-          </li>
-          <li>CONSTRUCTION TECHNOLOGY AND MANAGEMENT
-             <div class="theme__details">
-              Advanced construction materials and technologies, Construction economics, Workplace management, Life cycle assessment, Construction laws, Construction productivity, Value engineering, Safety and health management, Management practices for construction equipments and materials, Innovation in construction, Construction waste management, Building energy efficiency, BIM and life cycle project management, Contract management.
-            </div>
-          </li>
-          <li>CONCRETE AND STRUCTURAL ENGINEERING
-             <div class="theme__details">
-              Advances in cement based materials and concrete technology, Structural analysis & design of Reinforced, Steel and Prestressed concrete, Repair, Rehabilitation and Retrofitting of structural systems, Earthquake resistant design of structures, Computational techniques in structural engineering, Geotechnical investigations & design of structures, Smart material applications and Structural Health Monitoring, Response measurement and control of structures, Sustainability in concrete and structural engineering.
-            </div>
-          </li>
-          <li>CHEMICAL PROCESS DEVELOPMENT AND DESIGN
-             <div class="theme__details">
-              This theme focuses on new process design and development where it can suggest substantial alteration in equipment or process design or developing new catalyst or employing novel techniques like use of ultrasound or microwave, micro or nano technology.
-            </div>
-          </li>
-          <li>TECHNOLOGIES AND GREEN ENVIRONMENT
-             <div class="theme__details">
-              Quest for the development of new alternative technologies is never ending process, so this theme will provide platform for research related to various environmentally benign technologies to solve the current problems such as, treatment of effluents, environmental management, recovery & reuse of materials and other issues related to environmental problems.
-            </div>
-          </li>
-          <li>SUSTAINABLE MANUFACTURING PROCESSES
-             <div class="theme__details">
-              Sustainable manufacturing seeks to profitably produce goods while minimizing a firm's environmental impact, natural resource use, and energy consumption. Under this theme, the research work related to methodologies, manufacturing processes and materials that contribute to sustainable manufacturing processes is invited.
-            </div>
-          </li>
-          <li>DESIGN AND ANALYSIS OF MACHINE AND MECHANISM
-             <div class="theme__details">
-              Design and analysis of machines and mechanisms is the key for reduction of lead times from concept stage to detailed design stage. The static and dynamic analysis to ensure the functionality, safety and reliability of systems made up of different kinds of materials is backbone of successful machine design and development. The theme aims to invite original work in the area of computational methods, experimental work and analytical solutions for design and analysis of machines and mechanisms.
-            </div>
-          </li>
-          <li>ENERGY CONSERVATION AND MANAGEMENT
-             <div class="theme__details">
-              Energy is the "Energy" for growth and development. The objective of Energy Management and Conservation is to achieve and maintain optimum energy procurement and utilization to minimize energy costs / waste without affecting production, comfort and quality. The articles invited under this theme are expected to be in the area of production, utilization and conservation of energy.
-            </div>
-          </li>
-        </ul>
-      </div>
-      
-    </section>
-
-    <section class="about">
-      <img src="./asset/asset_two.jpg" alt="parul_gate" loading="lazy"/>
-      <div class="anim">
-        <h1>About Parul University</h1>
-        <p>
-          Parul University is an established university established under
-          Gujarat Private University Act 2009, after legislation passed by the
-          Government of Gujarat on 26th March 2015 giving University status to
-          Parul Group of Institutes functioning under the aegis of
-          ParulArogyaSevaMandal Trust.
-        </p>
-        <br />
-        <p>
-          Parul University is an amalgamation on 36 Institutes offering 150+
-          programs in Engineering & Technology, Pharmacy, Physiotherapy,
-          Homoeopathy, Ayurveda, Architecture, Management, Business
-          Administration,
-        </p>
-        <br />
-        <p>
-          Computer Application, Fine Arts, Social Work, Arts, Commerce,
-          Agriculture, Design, Law, Applied Science, Medicine and Vocational
-          Education at Diploma, Under Graduate, Post Graduate & Doctoral Level
-          in a 150+ acre fully equipped campus.
-        </p>
-        <br />
-        <p>
-          Housing 35000+ students, 1200+ International Students from 64
-          Different Countries, 2500+ faculty members & providing in-campus
-          residential facility to 7000+ students making it India's Premier
-          Multidisciplinary University.
-        </p>
-        <br />
-        <p>
-          As a mark of excellence, the University has been awarded as Best
-          Private University in Western India by Praxis Media, Best University
-          in Placements by ASSOCHAM and ranked among the Top 50 Private
-          Universities for Leading Innovation Achievements 2020 by ARIIA,
-          Ministry of Human Resource Development. Our Multidisciplinary network
-          of expert faculties, corporate ties, collaborative research and global
-          partnerships provide our students with an enriching University
-          experience, uniquely shaping every student, to shape the world.
-        </p>
-        <br />
-      </div>
-    </section>
-
-    <section class="keynoteSpeaker" id="keynoteSpeaker">
-      <h1>Keynote Speakers</h1>
-      <div>
-        <div>
-          <img src="./asset/dr nami.jpg" alt="" />
-          <p>Dr. Mohammad Nami</p>
-          <span>Mohammad.nami@brainmappingfo</span>
-          <span>
-            Director | Brain , Cognition and Behavior Unit , Department Of
-            Neuroscience
-          </span>
-          <span>Shiraz University Of Medical Sciences , Iran</span>
-        </div>
-        <div>
-          <img src="./asset/jaware.png" alt="" />
-          <p>Andrew Ware</p>
-          <span>andrew.ware@southwales.ac.uk</span>
-          <span>Professor In Computing</span>
-          <span>University of South Wales , UK</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="committe" id="committe">
-      <h1>Committes</h1>
-      <div>
-        <h3>Steering  Committee</h3>
-        <ul>
-          <h4>Chief Patron</h4>
-          <li>Dr. Devanshu Patel, President, Parul University</li>
-          <h4>Patron</h4>
-          <li>Dr. M. N. Patel, Provost, Parul University</li>
-          <li>Dr. H. S. Vijaykumar, Pro Vice Chanceler, Parul University</li>
-          <li>Dr. Manish Pandya, Registrar, Parul University</li>
-
-          <h4>General Chairs</h4>
-          <li>
-            Dr. Vipul Vekariya, Dean-FET and Principal-PIET, Parul University
-          </li>
-          <h4>General Co-chairs:</h4>
-          <li>Dr. Bhavesh Mewada, Principal, PIT, Parul University</li>
-
-          <li>
-            Professor Ruchi Shrivastava ,Principal , PIET - Diploma Studies
-          </li>
-          <li>
-            Professor Jatin Vaidhya , Principal , Parul Polytechnic Institute
-          </li>
-          <h4>Conference Chair:</h4>
-
-          <li>Dr. Chirag A. Naik</li>
-          <li>Dr. Rutvij Joshi</li>
-          <li>Dr. Richa Mishra</li>
-        </ul>
-        <h3>Advisory Committee</h3>
-        <ul>
-          <li>
-            Burdescu Dumitru Dan, Professor, Computers and Information
-            Technology Department, University of Craiova, Dolj, Romania
-          </li>
-          <li>
-            Dr. Utkal Mehta, Associate Professor and Programme Leader,
-            Electrical and Electronics Engineering,School of Engineering &
-            Physics, The University of the South Pacific, Laucala Campus, Suva,
-            FIJI. (PhD IIT Guwahati, IEEE Senior Member)
-          </li>
-          <li>
-            Dr. Mohamed I. Marie, Associate Professor, Information Systems,
-            Faculty of Computers and Artificial Intelligence Helwan University
-            Cairo, Egypt.
-          </li>
-          <li>
-            Dr. Rituraj Jain, Assistant Professor, Department of Electrical and
-            Computer Engineering, Wollega University, Ethiopia
-          </li>
-          <li>
-            Dr. Franciszek Restel, Ph.D. Engg., Faculty of Mechanical Engg.,
-            Wroclaw University of Science & Technology, Wroclaw, Poland.
-          </li>
-          <li>
-            Dr. Tomasz Kisiel, Ph.D. Engg., Faculty of Mechanical Engg., Wroclaw
-            University of Science & Technology, Wroclaw, Poland.
-          </li>
-          <li>
-            Dr. Juergen Sauser, Professor, Department of Mechanical Engg. F H
-            Bielefeld University of Applied Science, Germany
-          </li>
-          <li>
-            Prof. Kai Borgeest, Head of Center of Autmotive Electronics and
-            Engines, Hochschule Aschaffenburg, University of Applied Science,
-            Germany.
-          </li>
-          <li>
-            Dr. Josef Bradac, HOD, Autometive Tech,Skoda University, Czech
-            Republic, Germany.
-          </li>
-          <li>
-            Dr. Shripad T. Revankar, Professor and Director, Department of
-            Mechanical Engg, Purdue University USA.
-          </li>
-          <li>
-            Dr. Anil Kumar, Senior Researcher in Decision Sciences, Centre of
-            Supply Chain Improvement University of Derby, United Kingdom (UK).
-          </li>
-          <li>
-            Dr.Marek Młyńczak, Faculty of Mechanical Engg., Wroclaw University
-            of Science & Technology, Wroclaw, Poland.
-          </li>
-          <li>
-            Dr. Satyam Panchal, Assistant Professor, Mechanical Department,
-            University of Waterloo, Canada.
-          </li>
-          <li>
-            Dr. Krzystof Naplocha, Professor, Faculty of Mechanical Engg.,
-            Wroclaw University of Science & Technology, Wroclaw, Poland.
-          </li>
-        </ul>
-        <!-- <h3>National</h3> -->
-        <ul>
-          <li>
-            Dr. Sudeep Tanwar, Professor, Department of Computer Engineering,
-            Nirma University, Ahmedabad, Gujarat, India
-          </li>
-          <li>
-            Dr. Vishvjit Thakar, Principal, Nobel College of Engineering and
-            Technology, Junagadh, Gujarat.
-          </li>
-          <li>
-            Dr. Amit Ganatra, Principal and Professor, DEPSTAR, Charusat
-            University, Changa, Gujarat, India
-          </li>
-          <li>
-            Dr. Saurabh A Shah, Dean and Professor, School of Technology, GSFC
-            University, Vadodara, Gujarat, India
-          </li>
-          <li>
-            Dr. Mayuri Mehta, Professor, Department of Computer Engineering,
-            Sarvajanik College of Engineering and Technology, Surat, Gujarat,
-            India
-          </li>
-          <li>
-            Dr. Brijendra kumar Joshi, Professor, Electronic and
-            Telecommunications and Computer Engineering, Military College of
-            Telecommunications Engineering , Mhow, Indore, India
-          </li>
-          <li>
-            Dr. Apurva Shah, Professor, MS University, Vadodara, Gujarat, India
-          </li>
-          <li>
-            Dr. Narendra M Patel, Associate Professor, Department of Computer
-            Engineering, BVM, V V Nagar, Gujarat, India
-          </li>
-          <li>
-            Dr. Ankit Desai, Principal Data Scientist, Head Data Science
-            Lab@Embibe, Bangalore, India
-          </li>
-          <li>
-            Dr. Rutvij Jhaveri, Assistant Professor, Department of Computer
-            Science and Engineering, Pandit Deendayal Energy University (PDEU /
-            PDPU), Gandhinagar, Gujarat, India
-          </li>
-          <li>
-            Dr. Pramod Patil, Principal, Dr. D. Y. Patil Institute of
-            Technology, Pimpri, Pune, India
-          </li>
-          <li>
-            Dr. SUDEEP THEPADE, Professor, Computer Engineering Department,
-            Pimpri Chinchwad College of Engineering, Savitribai Phule Pune
-            University, Pune, Maharashtra, India
-          </li>
-          <li>
-            Dr. Rajesh Ingle, Professor, Department of Computer Engineering,
-            Pune Institute of Computer Technology, Pune Maharashtra, India
-          </li>
-          <li>
-            Dr. Jaymin Bhalani, Professor, Electronics and Communication
-            Department, Babaria Institute of Technology, Vadodara, Gujarat,
-            India
-          </li>
-          <li>
-            Dr Sharnil Pandya, Associate Faculty, Symbiosis Centre for Applied
-            Artificial Intelligence(SCAAI) and Associate Professor, CSIT
-            Department, Symbiosis Institute of Technology, Symbiosis
-            International University, Pune, India
-          </li>
-          <li>
-            Dr. Ritesh Patel, Associate Professor and Head, Department of
-            Computer Engineering, CSPIT, Charusat University, Changa, Gujarat,
-            India
-          </li>
-          <li>
-            Dr.Harshadkumar B Prajapati, Associate Professor, Department of
-            Information Technology, Faculty of Technology, Dharmsinh Desai
-            University, Nadiad, Gujarat, India
-          </li>
-          <li>
-            Dr. Bela Shrimali, Assistant Professor, Department of Computer
-            Engineering, LDRP Institute of Technology and Research, Gandhinagar,
-            Gujarat, India
-          </li>
-          <li>
-            Dr. Nishant Doshi, Assistant Professor, Department of Computer
-            Science and Engineering, Pandit Deendayal Energy University (PDEU /
-            PDPU), Gandhinagar, Gujarat, India
-          </li>
-          <li>
-            Dr. Sanjeev Kumar, Professor & Head, Department of Computer
-            Application, Tula's Institute Dehradun, India
-          </li>
-          <li>
-            Dr. Gokulnath K, Associate Professor, School of Computer Science and
-            Engineering, VIT-AP campus, India
-          </li>
-          <li>
-            Dr. Amit Sant, Associate Professor, Department of Electrical
-            Engineering, School of Technology, Pandit Deendayal Energy
-            University (PDEU / PDPU), Gandhinagar, Gujarat, India
-          </li>
-          <li>
-            Dr. Uday Shankar Dixit, Professor, Department of Mechanical
-            Engineering, Indian Institute of Technology Guwahati, Guwahati.
-          </li>
-          <li>
-            Dr. Dibakar Rakshit, Associate Professor, Department of Mechanical
-            Engineering, Indian Institute of Technology Delhi, Delhi
-          </li>
-          <li>
-            Dr. Amitava Ray, Principal, Jalpaiguri Government Engineering
-            College, Jalpaiguri, West-Bengal.
-          </li>
-          <li>
-            Dr. Sumit Bhowmik, Assistant Professor, Department of Mechanical
-            Engineering, National Institute of Technology Silchar, Silchar.
-          </li>
-          <li>
-            Dr. Pradeep V Malaji, Associate Professor, Department of Mechanical
-            Engineering, BLDEA's VP Dr. PGH CET Vijayapur.
-          </li>
-          <li>
-            Dr. Sudip Dey, Assistant Professor, Dept of Mechanical Engineering,
-            National Institute of Technology Silchar, Silchar.
-          </li>
-          <li>
-            Dr. Tanmoy Mukhopadhyay, Assistant Professor, Department of
-            Aerospace Engineering, Indian Institute of Technology Kanpur,
-            Kanpur.
-          </li>
-          <li>
-            Dr. Susmita Naskar, Assistant Professor, Department of Aerospace
-            Engineering, Indian Institute of Technology Bombay, Mumbai.
-          </li>
-          <li>
-            Dr. Vijay Kumar Dalla, Assistant Professor, Department of Mechanical
-            Engineering, National Institute of Technology Jamshedpur,
-            Jamshedpur.
-          </li>
-          <li>
-            Dr. Hari Singh, Professor, Mechanical Engineering Department,
-            National Institute of Technology Kurukshetra, Kurukshetra.
-          </li>
-          <li>
-            Dr Dilbagh Panchal, Assistant Professor, Industrial & Production
-            Engg., Dr. B.R Ambedkar National Institute of Technology Jalandhar,
-            Jalandhar.
-          </li>
-          <li>
-            Dr. Sushovan Chatterjee, Head, Mechanical Engineering Department,
-            Cooch Behar Government Engineering College, West Bengal.
-          </li>
-          <li>
-            Dr. Ashish B Deoghare, Assistant Professor, Mechanical Engineering
-            Department, NIT Silchar, Silchar.
-          </li>
-          <li>
-            Prof.(Dr.) Atul Srivastava, Professor, Department of Mechanical
-            Engineering, Indian Institute of Technology Bombay, Mumbai.
-          </li>
-          <li>
-            Dr. Mohd Zaheer Khan Yusufzai, Associate Professor, Department of
-            Mechanical Engineering, Indian Institute of Technology, Banaras
-            Hindu University, Varanasi.
-          </li>
-          <li>
-            Dr.Rahul Chhibber, Assistant Professor, Department of Mechanical
-            Engineering, Indian Institute of Technology, Jodhpur.
-          </li>
-          <li>
-            Prof.(Dr.) M. Muzaffarul Hasan, Professor, Department of Mechanical
-            Engineering, Jamia Millia Islamia University, Central University,
-            New Delhi.
-          </li>
-          <li>
-            Dr. B. Ravi, Institute Chair Professor, Department of Mechanical
-            Engineering, Indian Institute of Technology, Bombay.
-          </li>
-          <li>
-            Dr. S.H. Upadhyay, Professor, Department of Mechanical Engineering,
-            Indian Institute of Technology, Roorkee.
-          </li>
-          <li>
-            Dr. H.K. Raval, Professor, Department of Mechanical Engineering,
-            SVNIT-Surat.
-          </li>
-          <li>
-            Dr. K.C.Vora, Member and Chair, Development Board, ARAI, SAE INDIA.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="tabularSection" id="tabularSection">
-      <div>
-        <h1>Keydates</h1>
-        <div>
-          <table>
-            <tr>
-              <td>Subject</td>
-              <td>Dates</td>
-            </tr>
-
-            <tr>
-              <td>Commencement of Full-Length Paper Submission</td>
-              <td>18/12/2021</td>
-            </tr>
-            <tr>
-              <td>Deadline for Submission of Full-Length Paper</td>
-              <td>15/02/2022</td>
-            </tr>
-            <tr>
-              <td>Notification for Acceptance of Paper</td>
-              <td>28/02/2022</td>
-            </tr>
-            <tr>
-              <td>Deadline for Submission of Camera-Ready Copy</td>
-              <td>15/03/2022</td>
-            </tr>
-            <tr>
-              <td>Deadline for Early Bird Registration</td>
-              <td>21/03/2022</td>
-            </tr>
-            <tr>
-              <td>Deadline for Registration</td>
-              <td>6/04/2022</td>
-            </tr>
-            <tr>
-              <td>Deadline for Late Registration</td>
-              <td>13/04/2022</td>
-            </tr>
-            <tr>
-              <td>Conference Dates</td>
-              <td>13/05/2022 & 14/05/2022</td>
-            </tr>
-          </table>
-        </div>
+        <h2 id="days">00</h2>
+        <span>Days</span>
       </div>
       <div>
-        <h1>Registration Details</h1>
-        <div>
-          <table>
-            <tr>
-              <th rowspan="2">Category</th>
-              <th rowspan="2">Delegate (Only Attending)</th>
-              <th colspan="3">Contributor (Presenting Paper)</th>
-            </tr>
-            <tr>
-              <th>Early Bird</th>
-              <th>Regular</th>
-              <th>Late</th>
-            </tr>
-            <tr>
-              <td>Research Scholar (M. Tech/Ph. D)</td>
-              <td>1500 INR</td>
-              <td>4000 INR</td>
-              <td>5000 INR</td>
-              <td>6000 INR</td>
-            </tr>
-            <tr>
-              <td>Academicians</td>
-              <td>2000 INR</td>
-              <td>6000 INR</td>
-              <td>7000 INR</td>
-              <td>8000 INR</td>
-            </tr>
-            <tr>
-              <td>Industry</td>
-              <td>3000 INR</td>
-              <td>7000 INR</td>
-              <td>8000 INR</td>
-              <td>9000 INR</td>
-            </tr>
-            <tr>
-              <td>Foreign Student</td>
-              <td>75 USD</td>
-              <td>100 USD</td>
-              <td>125 USD</td>
-              <td>150 USD</td>
-            </tr>
-            <tr>
-              <td>Foreign Delegate</td>
-              <td>100 USD</td>
-              <td>150 USD</td>
-              <td>175 USD</td>
-              <td>200 USD</td>
-            </tr>
-          </table>
-        </div>
+        <h2 id="hours">00</h2>
+        <span>Hours</span>
       </div>
-    </section>
-
-    <section class="callForPapers" id="callForPapers">
-      <h1>Call For Papers</h1>
       <div>
-        <h1>Author Guidelines</h1>
-        <hr>
-        <ul>
-          <li>Paper Tempelate One</li>
-          <li>Paper Tempelate Two</li>
-        </ul>
-      </div>  
-      <div>
-        <h1>Paper Submission</h1>
-        <a href="https://www.easychair.org/" target="_blank" class="submitPaper">Submit</a>
+        <h2 id="minutes">00</h2>
+        <span>Mins</span>
       </div>
-    </section>
-
-    <footer>
+      <div>
+        <h2 id="seconds">00</h2>
+        <span>Secs</span>
+      </div>
+    </div>
+  </section>
+  <section class="themes" id="themes">
+    <div>
+      <h1>Themes</h1>
+      <hr>
       <ul>
         <li>
-          <span>Location</span>
-          <p>
-            Faculty of Engineering & Technology Parul University, P.O. Limda,
-            Ta. Waghodia 391760, Dist. Vadodara, Gujarat (India)
-          </p>
+          ADVANCES IN NETWORKING TECHNOLOGIE
+          <div class="theme__details">
+            This theme covers areas including but not limited to Wired Network, Wireless and Ad-hoc networks, Software
+            Defined Networks, Wireless Sensor Networks, Vehicular Networks, Body Area Networks, Delay Tolerant Networks,
+            Mobile Social Networks, and Internet of Things. Protocols and algorithms for communication, performance
+            enhancement, QoS provisioning and security in these and other networks.
+          </div>
         </li>
-        <li>
-          <span>Phone</span>
-          <p>+91-2668-260312</p>
+        <li>MACHINE INTELLIGENCE / COMPUTATIONAL INTELLIGENCE
+          <div class="theme__details">
+            Optimization, Artificial Intelligence, Machine Learning methods / algorithms, Data Mining and Big Data,
+            Pattern Analysis, Soft Computing, Bio-inspired computing, Image Processing, Computer Vision, Biometric
+            security, Speech Analysis, Signal Processing theory and methods, and applications of human brain
+            interactions. Other theory/applications of machine learning and signal processing techniques are also
+            welcome.
+          </div>
         </li>
-        <li>
-          <span>Fax</span>
-          <p>+91-2668-260201</p>
+        <li>AUTONOMIC COMPUTING
+          <div class="theme__details">
+            Cluster and grid computing, cloud as a service, applications and infrastructure, edge computing, fog
+            computing, enterprise software and services, multicore systems, computing in Internet of Things and embedded
+            systems, design issues addressing architectural challenges of autonomic computing and its solutions,
+            algorithms, theory and foundations of autonomic computing, applications, security and current trends.
+          </div>
         </li>
-        <li>
-          <span>Mail Id</span>
-          <p>picet@paruluniversity.ac.in</p>
+        <li>CONTROL AND AUTOMATION
+          <div class="theme__details">
+            Researchers from industry and academia are invited to present their research work in the area of Process
+            Modelling, Simulation, Robot Dynamics, Control Algorithms, Vision based Control, Industrial Automation,
+            Control and Optimization under this theme. The present theme also focuses on Fault Detection and Diagnosis.
+            Research on contemporary issues related to process industries are invited under this theme. Apart from above
+            mentioned topics, challenges and solutions of factory automations are also expected under this theme.
+          </div>
+        </li>
+        <li>FUTURISTIC POWER SYSTEM
+          <div class="theme__details">
+            The smart grid, incorporating the distributed generation and electric vehicles (EVs), are in the realization
+            stage. The large power grids are likely to be impacted greatly and the issues of grid stability, grid
+            dynamics and grid monitoring requires considerations. The inclusion of power electronic converters in the
+            form of FACTS devices, the DFIG converters, Battery controllers of EVs, active harmonic compensators etc.
+            brings in newer challenges. The data availability and accumulations, information exchange about the power
+            system and its component behaviour offers big data analytics and interpretation issues. This sub-theme
+            covers the focus on intelligent technological solutions to many such power system problems.
+          </div>
+        </li>
+        <li>CONTROL OF POWER ELECTRONICS CONVERTERS AND DRIVES
+          <div class="theme__details">
+            Due to advancements in power electronic device technology and availability of fast computational processors,
+            Power Electronic Converters have penetrated to all the segments of engineering, where in electrical
+            engineering has a role to play. Also, electrical machine drives are back-bone of industrial processes.
+            Hence, effective control of Power Electronic Converters and Drives will enable technologies and processes
+            which in turn will lead to sustainable development. This theme aims to invite novel topologies, and control
+            strategies of Power Electronic Converters and Drives.
+          </div>
+        </li>
+        <li>ADVANCED ELECTRICAL MACHINES AND SMART APPARATUS
+          <div class="theme__details">
+            Brief description of the theme: The energy efficiency, high power density, compact design and robust control
+            for the electrical machines are the focus of the day. The development in the linear and rotating induction
+            machines with controllers, switched reluctance machines, permanent magnet machines, energy efficient special
+            machines are highly encouraging. The newer material options in transformer technology is turning to be game
+            changer. The inclusion of IoT and embedded systems, variety of sensors in the machine offer insights to the
+            diagnostics as well. The theme aims to invite new design and control approaches of electrical machines as
+            well as new equipment for monitoring of the electrical machines.
+          </div>
+        </li>
+        <li>ELECTRONIC COMMUNICATIONS
+          <div class="theme__details">
+            Contributions based on performance analysis, experimental development and simulation in the areas of optical
+            communication, wired/wireless communication and networks, Ad Hoc Network, sensor networks, Next generation
+            networks, RF and antenna systems, microwave communication, satellite communication, antenna design,
+            cognitive radio, energy harvesting and green communication, Internet of Things (IoT), IoT in urban
+            development, Intelligent transportation system, ICT applications in social upliftment, Navigation system are
+            invited.
+          </div>
+        </li>
+        <li>ELECTRONICS CIRCUITS AND SYSTEM DESIGN
+          <div class="theme__details">
+            Contributions are invited in the areas such as Embedded System Design, Cyber Physical System (CPS), Health
+            and Medical Electronics, Reconfigurable Architecture, Device Modelling and Simulation, Advanced CMOS
+            Devices, Emerging Memory Devices, Analog and Mixed-Signal Circuits, Circuit Timing and Power Models, Low
+            Power and Near/Sub Threshold Circuit Design, Logic and Behavioral Synthesis, Placement, Routing and Floor
+            Planning, Design Automation, Design Verification, Test, Reliability and Fault Tolerance, Formal
+            Verification, Design For Testability, Fault Modelling, Post-Silicon Validation, Testing Memories and Regular
+            Logic Arrays, Design for Manufacturability and Yield Analysis, Device Physics Design and Circuits using Non-
+            Silicon Materials.
+          </div>
+        </li>
+        <li>SIGNAL PROCESSING
+          <div class="theme__details">
+            Contributions are invited in the areas such as Signal Processing for Communications, Image and Video Signal
+            Processing, Multimedia applications, DSP algorithms and architectures, Speech and Speaker identification,
+            Biomedical applications, Language identification, Machine learning, Pattern recognition and classification,
+            Applications in Astronomy/ Astrophysics, Radar and Sonar signal processing.
+          </div>
+        </li>
+        <li>RECENT TRENDS IN APPLIED MATHEMATICS
+          <div class="theme__details">
+            Research in the Mathematics is a key element for the advancement of all areas of science and technology.
+            Being one of the vital areas of science in itself, Pure and Applied Mathematics works in tandem in all the
+            domains of engineering and technology. Moreover, it significantly contributes to research areas like
+            Mathematical Modeling of Industrial Processes and many more of its kind. Need of the hour is to cultivate
+            and sustain core research capability, and at the same time cross the borders to promote transformative and
+            interdisciplinary research. Graph Theory, Modeling and Simulation Bio-Mathematics, Statistical
+            Computation/Optimization Fuzzy logic, Algebra, Number Theory.
+          </div>
+        </li>
+        <li>RECENT TRENDS IN TEACHING-LEARNING IN ENGINEERING EDUCATION
+          <div class="theme__details">
+            Innovative methods in curriculum design and delivery, Social media and teaching-learning, Blended
+            Learning/MOOCs in Engineering Education, Assessing the assessment, Futuristic Trends in Engineering
+            Education, Entrepreneurship and Innovation.
+          </div>
+        </li>
+        <li>ADVANCES IN TRANSPORTATION ENGINEERING
+          <div class="theme__details">
+            Pavement materials, Pavement analysis and design, Traffic operations and management, Transportation
+            economics, Road safety and traffic awareness, Accident analysis, Transportation planning and modelling,
+            Intelligent transportation systems, Sustainable transportation system, Public transportation system, Road
+            construction technology.
+          </div>
+        </li>
+        <li>EMERGING TRENDS IN WATER RESOURCES AND ENVIRONMENTAL ENGINEERING
+          <div class="theme__details">
+            Impact of climate change on water resources, Ground water modeling & management, Hydrological modeling &
+            forecasting, Application of remote sensing & GIS in water resources, Irrigation planning & management,
+            Reservoir operation & optimization, Sustainable development of water resources, Watershed management, Water
+            quality monitoring & assessment, Environment hydraulics, Environmental impact assessment, Water and waste
+            water treatment, Solid waste management, Air and noise pollution, Recycle and reuse of waste.
+          </div>
+        </li>
+        <li>CONSTRUCTION TECHNOLOGY AND MANAGEMENT
+          <div class="theme__details">
+            Advanced construction materials and technologies, Construction economics, Workplace management, Life cycle
+            assessment, Construction laws, Construction productivity, Value engineering, Safety and health management,
+            Management practices for construction equipments and materials, Innovation in construction, Construction
+            waste management, Building energy efficiency, BIM and life cycle project management, Contract management.
+          </div>
+        </li>
+        <li>CONCRETE AND STRUCTURAL ENGINEERING
+          <div class="theme__details">
+            Advances in cement based materials and concrete technology, Structural analysis & design of Reinforced,
+            Steel and Prestressed concrete, Repair, Rehabilitation and Retrofitting of structural systems, Earthquake
+            resistant design of structures, Computational techniques in structural engineering, Geotechnical
+            investigations & design of structures, Smart material applications and Structural Health Monitoring,
+            Response measurement and control of structures, Sustainability in concrete and structural engineering.
+          </div>
+        </li>
+        <li>CHEMICAL PROCESS DEVELOPMENT AND DESIGN
+          <div class="theme__details">
+            This theme focuses on new process design and development where it can suggest substantial alteration in
+            equipment or process design or developing new catalyst or employing novel techniques like use of ultrasound
+            or microwave, micro or nano technology.
+          </div>
+        </li>
+        <li>TECHNOLOGIES AND GREEN ENVIRONMENT
+          <div class="theme__details">
+            Quest for the development of new alternative technologies is never ending process, so this theme will
+            provide platform for research related to various environmentally benign technologies to solve the current
+            problems such as, treatment of effluents, environmental management, recovery & reuse of materials and other
+            issues related to environmental problems.
+          </div>
+        </li>
+        <li>SUSTAINABLE MANUFACTURING PROCESSES
+          <div class="theme__details">
+            Sustainable manufacturing seeks to profitably produce goods while minimizing a firm's environmental impact,
+            natural resource use, and energy consumption. Under this theme, the research work related to methodologies,
+            manufacturing processes and materials that contribute to sustainable manufacturing processes is invited.
+          </div>
+        </li>
+        <li>DESIGN AND ANALYSIS OF MACHINE AND MECHANISM
+          <div class="theme__details">
+            Design and analysis of machines and mechanisms is the key for reduction of lead times from concept stage to
+            detailed design stage. The static and dynamic analysis to ensure the functionality, safety and reliability
+            of systems made up of different kinds of materials is backbone of successful machine design and development.
+            The theme aims to invite original work in the area of computational methods, experimental work and
+            analytical solutions for design and analysis of machines and mechanisms.
+          </div>
+        </li>
+        <li>ENERGY CONSERVATION AND MANAGEMENT
+          <div class="theme__details">
+            Energy is the "Energy" for growth and development. The objective of Energy Management and Conservation is to
+            achieve and maintain optimum energy procurement and utilization to minimize energy costs / waste without
+            affecting production, comfort and quality. The articles invited under this theme are expected to be in the
+            area of production, utilization and conservation of energy.
+          </div>
         </li>
       </ul>
-     <div>
+    </div>
+
+  </section>
+
+  <section class="about">
+    <img src="./asset/asset_two.jpg" alt="parul_gate" loading="lazy" />
+    <div class="anim">
+      <h1>About Parul University</h1>
+      <p>
+        Parul University is an established university established under
+        Gujarat Private University Act 2009, after legislation passed by the
+        Government of Gujarat on 26th March 2015 giving University status to
+        Parul Group of Institutes functioning under the aegis of
+        ParulArogyaSevaMandal Trust.
+      </p>
+      <br />
+      <p>
+        Parul University is an amalgamation on 36 Institutes offering 150+
+        programs in Engineering & Technology, Pharmacy, Physiotherapy,
+        Homoeopathy, Ayurveda, Architecture, Management, Business
+        Administration,
+      </p>
+      <br />
+      <p>
+        Computer Application, Fine Arts, Social Work, Arts, Commerce,
+        Agriculture, Design, Law, Applied Science, Medicine and Vocational
+        Education at Diploma, Under Graduate, Post Graduate & Doctoral Level
+        in a 150+ acre fully equipped campus.
+      </p>
+      <br />
+      <p>
+        Housing 35000+ students, 1200+ International Students from 64
+        Different Countries, 2500+ faculty members & providing in-campus
+        residential facility to 7000+ students making it India's Premier
+        Multidisciplinary University.
+      </p>
+      <br />
+      <p>
+        As a mark of excellence, the University has been awarded as Best
+        Private University in Western India by Praxis Media, Best University
+        in Placements by ASSOCHAM and ranked among the Top 50 Private
+        Universities for Leading Innovation Achievements 2020 by ARIIA,
+        Ministry of Human Resource Development. Our Multidisciplinary network
+        of expert faculties, corporate ties, collaborative research and global
+        partnerships provide our students with an enriching University
+        experience, uniquely shaping every student, to shape the world.
+      </p>
+      <br />
+    </div>
+  </section>
+
+  <!-- <section class="keynoteSpeaker" id="keynoteSpeaker">
+    <h1>Keynote Speakers</h1>
+    <div>
+      <div>
+        <img src="./asset/dr nami.jpg" alt="" />
+        <p>Dr. Mohammad Nami</p>
+        <span>Mohammad.nami@brainmappingfo</span>
+        <span>
+          Director | Brain , Cognition and Behavior Unit , Department Of
+          Neuroscience
+        </span>
+        <span>Shiraz University Of Medical Sciences , Iran</span>
+      </div>
+      <div>
+        <img src="./asset/jaware.png" alt="" />
+        <p>Andrew Ware</p>
+        <span>andrew.ware@southwales.ac.uk</span>
+        <span>Professor In Computing</span>
+        <span>University of South Wales , UK</span>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="keynoteSpeaker" id="keynoteSpeaker">
+    <h1>Keynote Speakers</h1>
+    <div>
+      <div>
+        <img src="./asset/dr nami.jpg" alt="Speaker">
+        <div class="speaker_info">
+        <h1>Dr. Mohammad Nami</h1>
+       <div>
+        <span>Mohammad.nami@brainmappingfo</span>
+        <span>
+          Director | Brain , Cognition and Behavior Unit , Department Of
+          Neuroscience
+        </span>
+        <span>Shiraz University Of Medical Sciences , Iran</span>
+       </div>
+        </div>
+      </div>
+      <div>
+        <img src="./asset/jaware.png" alt="Speaker">
+        <div class="speaker_info">
+        <h1>Andrew Ware</h1>
+        <div>
+          <span>andrew.ware@southwales.ac.uk</span>
+        <span>Professor In Computing</span>
+        <span>University of South Wales , UK</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="committe" id="committe">
+    <h1>Committes</h1>
+    <div>
+      <h3>Steering Committee</h3>
+      <ul>
+        <h4>Chief Patron</h4>
+        <li>Dr. Devanshu Patel, President, Parul University</li>
+        <h4>Patron</h4>
+        <li>Dr. M. N. Patel, Provost, Parul University</li>
+        <li>Dr. H. S. Vijaykumar, Pro Vice Chanceler, Parul University</li>
+        <li>Dr. Manish Pandya, Registrar, Parul University</li>
+
+        <h4>General Chairs</h4>
+        <li>
+          Dr. Vipul Vekariya, Dean-FET and Principal-PIET, Parul University
+        </li>
+        <h4>General Co-chairs:</h4>
+        <li>Dr. Bhavesh Mewada, Principal, PIT, Parul University</li>
+
+        <li>
+          Professor Ruchi Shrivastava ,Principal , PIET - Diploma Studies
+        </li>
+        <li>
+          Professor Jatin Vaidhya , Principal , Parul Polytechnic Institute
+        </li>
+        <h4>Conference Chair:</h4>
+
+        <li>Dr. Chirag A. Naik</li>
+        <li>Dr. Rutvij Joshi</li>
+        <li>Dr. Richa Mishra</li>
+      </ul>
+      <h3>Advisory Committee</h3>
+      <ul>
+        <li>
+          Burdescu Dumitru Dan, Professor, Computers and Information
+          Technology Department, University of Craiova, Dolj, Romania
+        </li>
+        <li>
+          Dr. Utkal Mehta, Associate Professor and Programme Leader,
+          Electrical and Electronics Engineering,School of Engineering &
+          Physics, The University of the South Pacific, Laucala Campus, Suva,
+          FIJI. (PhD IIT Guwahati, IEEE Senior Member)
+        </li>
+        <li>
+          Dr. Mohamed I. Marie, Associate Professor, Information Systems,
+          Faculty of Computers and Artificial Intelligence Helwan University
+          Cairo, Egypt.
+        </li>
+        <li>
+          Dr. Rituraj Jain, Assistant Professor, Department of Electrical and
+          Computer Engineering, Wollega University, Ethiopia
+        </li>
+        <li>
+          Dr. Franciszek Restel, Ph.D. Engg., Faculty of Mechanical Engg.,
+          Wroclaw University of Science & Technology, Wroclaw, Poland.
+        </li>
+        <li>
+          Dr. Tomasz Kisiel, Ph.D. Engg., Faculty of Mechanical Engg., Wroclaw
+          University of Science & Technology, Wroclaw, Poland.
+        </li>
+        <li>
+          Dr. Juergen Sauser, Professor, Department of Mechanical Engg. F H
+          Bielefeld University of Applied Science, Germany
+        </li>
+        <li>
+          Prof. Kai Borgeest, Head of Center of Autmotive Electronics and
+          Engines, Hochschule Aschaffenburg, University of Applied Science,
+          Germany.
+        </li>
+        <li>
+          Dr. Josef Bradac, HOD, Autometive Tech,Skoda University, Czech
+          Republic, Germany.
+        </li>
+        <li>
+          Dr. Shripad T. Revankar, Professor and Director, Department of
+          Mechanical Engg, Purdue University USA.
+        </li>
+        <li>
+          Dr. Anil Kumar, Senior Researcher in Decision Sciences, Centre of
+          Supply Chain Improvement University of Derby, United Kingdom (UK).
+        </li>
+        <li>
+          Dr.Marek Młyńczak, Faculty of Mechanical Engg., Wroclaw University
+          of Science & Technology, Wroclaw, Poland.
+        </li>
+        <li>
+          Dr. Satyam Panchal, Assistant Professor, Mechanical Department,
+          University of Waterloo, Canada.
+        </li>
+        <li>
+          Dr. Krzystof Naplocha, Professor, Faculty of Mechanical Engg.,
+          Wroclaw University of Science & Technology, Wroclaw, Poland.
+        </li>
+      </ul>
+      <!-- <h3>National</h3> -->
+      <ul>
+        <li>
+          Dr. Sudeep Tanwar, Professor, Department of Computer Engineering,
+          Nirma University, Ahmedabad, Gujarat, India
+        </li>
+        <li>
+          Dr. Vishvjit Thakar, Principal, Nobel College of Engineering and
+          Technology, Junagadh, Gujarat.
+        </li>
+        <li>
+          Dr. Amit Ganatra, Principal and Professor, DEPSTAR, Charusat
+          University, Changa, Gujarat, India
+        </li>
+        <li>
+          Dr. Saurabh A Shah, Dean and Professor, School of Technology, GSFC
+          University, Vadodara, Gujarat, India
+        </li>
+        <li>
+          Dr. Mayuri Mehta, Professor, Department of Computer Engineering,
+          Sarvajanik College of Engineering and Technology, Surat, Gujarat,
+          India
+        </li>
+        <li>
+          Dr. Brijendra kumar Joshi, Professor, Electronic and
+          Telecommunications and Computer Engineering, Military College of
+          Telecommunications Engineering , Mhow, Indore, India
+        </li>
+        <li>
+          Dr. Apurva Shah, Professor, MS University, Vadodara, Gujarat, India
+        </li>
+        <li>
+          Dr. Narendra M Patel, Associate Professor, Department of Computer
+          Engineering, BVM, V V Nagar, Gujarat, India
+        </li>
+        <li>
+          Dr. Ankit Desai, Principal Data Scientist, Head Data Science
+          Lab@Embibe, Bangalore, India
+        </li>
+        <li>
+          Dr. Rutvij Jhaveri, Assistant Professor, Department of Computer
+          Science and Engineering, Pandit Deendayal Energy University (PDEU /
+          PDPU), Gandhinagar, Gujarat, India
+        </li>
+        <li>
+          Dr. Pramod Patil, Principal, Dr. D. Y. Patil Institute of
+          Technology, Pimpri, Pune, India
+        </li>
+        <li>
+          Dr. SUDEEP THEPADE, Professor, Computer Engineering Department,
+          Pimpri Chinchwad College of Engineering, Savitribai Phule Pune
+          University, Pune, Maharashtra, India
+        </li>
+        <li>
+          Dr. Rajesh Ingle, Professor, Department of Computer Engineering,
+          Pune Institute of Computer Technology, Pune Maharashtra, India
+        </li>
+        <li>
+          Dr. Jaymin Bhalani, Professor, Electronics and Communication
+          Department, Babaria Institute of Technology, Vadodara, Gujarat,
+          India
+        </li>
+        <li>
+          Dr Sharnil Pandya, Associate Faculty, Symbiosis Centre for Applied
+          Artificial Intelligence(SCAAI) and Associate Professor, CSIT
+          Department, Symbiosis Institute of Technology, Symbiosis
+          International University, Pune, India
+        </li>
+        <li>
+          Dr. Ritesh Patel, Associate Professor and Head, Department of
+          Computer Engineering, CSPIT, Charusat University, Changa, Gujarat,
+          India
+        </li>
+        <li>
+          Dr.Harshadkumar B Prajapati, Associate Professor, Department of
+          Information Technology, Faculty of Technology, Dharmsinh Desai
+          University, Nadiad, Gujarat, India
+        </li>
+        <li>
+          Dr. Bela Shrimali, Assistant Professor, Department of Computer
+          Engineering, LDRP Institute of Technology and Research, Gandhinagar,
+          Gujarat, India
+        </li>
+        <li>
+          Dr. Nishant Doshi, Assistant Professor, Department of Computer
+          Science and Engineering, Pandit Deendayal Energy University (PDEU /
+          PDPU), Gandhinagar, Gujarat, India
+        </li>
+        <li>
+          Dr. Sanjeev Kumar, Professor & Head, Department of Computer
+          Application, Tula's Institute Dehradun, India
+        </li>
+        <li>
+          Dr. Gokulnath K, Associate Professor, School of Computer Science and
+          Engineering, VIT-AP campus, India
+        </li>
+        <li>
+          Dr. Amit Sant, Associate Professor, Department of Electrical
+          Engineering, School of Technology, Pandit Deendayal Energy
+          University (PDEU / PDPU), Gandhinagar, Gujarat, India
+        </li>
+        <li>
+          Dr. Uday Shankar Dixit, Professor, Department of Mechanical
+          Engineering, Indian Institute of Technology Guwahati, Guwahati.
+        </li>
+        <li>
+          Dr. Dibakar Rakshit, Associate Professor, Department of Mechanical
+          Engineering, Indian Institute of Technology Delhi, Delhi
+        </li>
+        <li>
+          Dr. Amitava Ray, Principal, Jalpaiguri Government Engineering
+          College, Jalpaiguri, West-Bengal.
+        </li>
+        <li>
+          Dr. Sumit Bhowmik, Assistant Professor, Department of Mechanical
+          Engineering, National Institute of Technology Silchar, Silchar.
+        </li>
+        <li>
+          Dr. Pradeep V Malaji, Associate Professor, Department of Mechanical
+          Engineering, BLDEA's VP Dr. PGH CET Vijayapur.
+        </li>
+        <li>
+          Dr. Sudip Dey, Assistant Professor, Dept of Mechanical Engineering,
+          National Institute of Technology Silchar, Silchar.
+        </li>
+        <li>
+          Dr. Tanmoy Mukhopadhyay, Assistant Professor, Department of
+          Aerospace Engineering, Indian Institute of Technology Kanpur,
+          Kanpur.
+        </li>
+        <li>
+          Dr. Susmita Naskar, Assistant Professor, Department of Aerospace
+          Engineering, Indian Institute of Technology Bombay, Mumbai.
+        </li>
+        <li>
+          Dr. Vijay Kumar Dalla, Assistant Professor, Department of Mechanical
+          Engineering, National Institute of Technology Jamshedpur,
+          Jamshedpur.
+        </li>
+        <li>
+          Dr. Hari Singh, Professor, Mechanical Engineering Department,
+          National Institute of Technology Kurukshetra, Kurukshetra.
+        </li>
+        <li>
+          Dr Dilbagh Panchal, Assistant Professor, Industrial & Production
+          Engg., Dr. B.R Ambedkar National Institute of Technology Jalandhar,
+          Jalandhar.
+        </li>
+        <li>
+          Dr. Sushovan Chatterjee, Head, Mechanical Engineering Department,
+          Cooch Behar Government Engineering College, West Bengal.
+        </li>
+        <li>
+          Dr. Ashish B Deoghare, Assistant Professor, Mechanical Engineering
+          Department, NIT Silchar, Silchar.
+        </li>
+        <li>
+          Prof.(Dr.) Atul Srivastava, Professor, Department of Mechanical
+          Engineering, Indian Institute of Technology Bombay, Mumbai.
+        </li>
+        <li>
+          Dr. Mohd Zaheer Khan Yusufzai, Associate Professor, Department of
+          Mechanical Engineering, Indian Institute of Technology, Banaras
+          Hindu University, Varanasi.
+        </li>
+        <li>
+          Dr.Rahul Chhibber, Assistant Professor, Department of Mechanical
+          Engineering, Indian Institute of Technology, Jodhpur.
+        </li>
+        <li>
+          Prof.(Dr.) M. Muzaffarul Hasan, Professor, Department of Mechanical
+          Engineering, Jamia Millia Islamia University, Central University,
+          New Delhi.
+        </li>
+        <li>
+          Dr. B. Ravi, Institute Chair Professor, Department of Mechanical
+          Engineering, Indian Institute of Technology, Bombay.
+        </li>
+        <li>
+          Dr. S.H. Upadhyay, Professor, Department of Mechanical Engineering,
+          Indian Institute of Technology, Roorkee.
+        </li>
+        <li>
+          Dr. H.K. Raval, Professor, Department of Mechanical Engineering,
+          SVNIT-Surat.
+        </li>
+        <li>
+          Dr. K.C.Vora, Member and Chair, Development Board, ARAI, SAE INDIA.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="tabularSection" id="tabularSection">
+    <div>
+      <h1>Keydates</h1>
+      <div>
+        <table>
+          <tr>
+            <td>Subject</td>
+            <td>Dates</td>
+          </tr>
+
+          <tr>
+            <td>Commencement of Full-Length Paper Submission</td>
+            <td>18/12/2021</td>
+          </tr>
+          <tr>
+            <td>Deadline for Submission of Full-Length Paper</td>
+            <td>15/02/2022</td>
+          </tr>
+          <tr>
+            <td>Notification for Acceptance of Paper</td>
+            <td>28/02/2022</td>
+          </tr>
+          <tr>
+            <td>Deadline for Submission of Camera-Ready Copy</td>
+            <td>15/03/2022</td>
+          </tr>
+          <tr>
+            <td>Deadline for Early Bird Registration</td>
+            <td>21/03/2022</td>
+          </tr>
+          <tr>
+            <td>Deadline for Registration</td>
+            <td>6/04/2022</td>
+          </tr>
+          <tr>
+            <td>Deadline for Late Registration</td>
+            <td>13/04/2022</td>
+          </tr>
+          <tr>
+            <td>Conference Dates</td>
+            <td>13/05/2022 & 14/05/2022</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h1>Registration Details</h1>
+      <div>
+        <table>
+          <tr>
+            <th rowspan="2">Category</th>
+            <th rowspan="2">Delegate (Only Attending)</th>
+            <th colspan="3">Contributor (Presenting Paper)</th>
+          </tr>
+          <tr>
+            <th>Early Bird</th>
+            <th>Regular</th>
+            <th>Late</th>
+          </tr>
+          <tr>
+            <td>Research Scholar (M. Tech/Ph. D)</td>
+            <td>1500 INR</td>
+            <td>4000 INR</td>
+            <td>5000 INR</td>
+            <td>6000 INR</td>
+          </tr>
+          <tr>
+            <td>Academicians</td>
+            <td>2000 INR</td>
+            <td>6000 INR</td>
+            <td>7000 INR</td>
+            <td>8000 INR</td>
+          </tr>
+          <tr>
+            <td>Industry</td>
+            <td>3000 INR</td>
+            <td>7000 INR</td>
+            <td>8000 INR</td>
+            <td>9000 INR</td>
+          </tr>
+          <tr>
+            <td>Foreign Student</td>
+            <td>75 USD</td>
+            <td>100 USD</td>
+            <td>125 USD</td>
+            <td>150 USD</td>
+          </tr>
+          <tr>
+            <td>Foreign Delegate</td>
+            <td>100 USD</td>
+            <td>150 USD</td>
+            <td>175 USD</td>
+            <td>200 USD</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="callForPapers" id="callForPapers">
+    <h1>Call For Papers</h1>
+    <div>
+      <h1>Author Guidelines</h1>
+      <hr>
+      <ul>
+        <li>Paper Tempelate One</li>
+        <li>Paper Tempelate Two</li>
+      </ul>
+    </div>
+    <div>
+      <h1>Paper Submission</h1>
+      <a href="https://easychair.org/conferences/?conf=picet2022" target="_blank" class="submitPaper">Submit</a>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li>
+        <span>Location</span>
+        <p>
+          Faculty of Engineering & Technology Parul University, P.O. Limda,
+          Ta. Waghodia 391760, Dist. Vadodara, Gujarat (India)
+        </p>
+      </li>
+      <li>
+        <span>Phone</span>
+        <p>+91-2668-260312</p>
+      </li>
+      <li>
+        <span>Fax</span>
+        <p>+91-2668-260201</p>
+      </li>
+      <li>
+        <span>Mail Id</span>
+        <p>picet@paruluniversity.ac.in</p>
+      </li>
+    </ul>
+    <div>
       <p>© Copyright 2022 by </p>
       <a href="https://www.paruluniversity.ac.in/" target="_blank">Parul University</a>
-     </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
