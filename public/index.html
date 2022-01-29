@@ -8,6 +8,8 @@
   <title>PiCET</title>
   <link rel="stylesheet" href="./css/main.css" />
   <script src="./js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body ontouchstart="">
@@ -64,7 +66,7 @@
         Parul University International Conference on Engineering &
         Technology</p>
 
-      <p>13th-14th May 2022</p>
+      <p>20-21 May 2022</p>
       </p>
     </div>
     <div class="countDown">
@@ -86,202 +88,353 @@
       </div>
     </div>
   </section>
-  <section class="themes" id="themes">
+  <section class="themes">
     <div>
       <h1>Themes</h1>
       <hr>
-      <ul>
-        <li>
-          ADVANCES IN NETWORKING TECHNOLOGIE
-          <div class="theme__details">
+    <div class="accordion" id="accordionExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            ADVANCES IN NETWORKING TECHNOLOGIE
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
             This theme covers areas including but not limited to Wired Network, Wireless and Ad-hoc networks, Software
             Defined Networks, Wireless Sensor Networks, Vehicular Networks, Body Area Networks, Delay Tolerant Networks,
             Mobile Social Networks, and Internet of Things. Protocols and algorithms for communication, performance
             enhancement, QoS provisioning and security in these and other networks.
           </div>
-        </li>
-        <li>MACHINE INTELLIGENCE / COMPUTATIONAL INTELLIGENCE
-          <div class="theme__details">
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            MACHINE INTELLIGENCE / COMPUTATIONAL INTELLIGENCE
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
             Optimization, Artificial Intelligence, Machine Learning methods / algorithms, Data Mining and Big Data,
             Pattern Analysis, Soft Computing, Bio-inspired computing, Image Processing, Computer Vision, Biometric
             security, Speech Analysis, Signal Processing theory and methods, and applications of human brain
             interactions. Other theory/applications of machine learning and signal processing techniques are also
             welcome.
           </div>
-        </li>
-        <li>AUTONOMIC COMPUTING
-          <div class="theme__details">
-            Cluster and grid computing, cloud as a service, applications and infrastructure, edge computing, fog
-            computing, enterprise software and services, multicore systems, computing in Internet of Things and embedded
-            systems, design issues addressing architectural challenges of autonomic computing and its solutions,
-            algorithms, theory and foundations of autonomic computing, applications, security and current trends.
+        </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              AUTONOMIC COMPUTING
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Cluster and grid computing, cloud as a service, applications and infrastructure, edge computing, fog
+              computing, enterprise software and services, multicore systems, computing in Internet of Things and embedded
+              systems, design issues addressing architectural challenges of autonomic computing and its solutions,
+              algorithms, theory and foundations of autonomic computing, applications, security and current trends.
+            </div>
           </div>
-        </li>
-        <li>CONTROL AND AUTOMATION
-          <div class="theme__details">
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                CONTROL AND AUTOMATION
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
             Researchers from industry and academia are invited to present their research work in the area of Process
             Modelling, Simulation, Robot Dynamics, Control Algorithms, Vision based Control, Industrial Automation,
             Control and Optimization under this theme. The present theme also focuses on Fault Detection and Diagnosis.
             Research on contemporary issues related to process industries are invited under this theme. Apart from above
             mentioned topics, challenges and solutions of factory automations are also expected under this theme.
-          </div>
-        </li>
-        <li>FUTURISTIC POWER SYSTEM
-          <div class="theme__details">
-            The smart grid, incorporating the distributed generation and electric vehicles (EVs), are in the realization
-            stage. The large power grids are likely to be impacted greatly and the issues of grid stability, grid
-            dynamics and grid monitoring requires considerations. The inclusion of power electronic converters in the
-            form of FACTS devices, the DFIG converters, Battery controllers of EVs, active harmonic compensators etc.
-            brings in newer challenges. The data availability and accumulations, information exchange about the power
-            system and its component behaviour offers big data analytics and interpretation issues. This sub-theme
-            covers the focus on intelligent technological solutions to many such power system problems.
-          </div>
-        </li>
-        <li>CONTROL OF POWER ELECTRONICS CONVERTERS AND DRIVES
-          <div class="theme__details">
-            Due to advancements in power electronic device technology and availability of fast computational processors,
-            Power Electronic Converters have penetrated to all the segments of engineering, where in electrical
-            engineering has a role to play. Also, electrical machine drives are back-bone of industrial processes.
-            Hence, effective control of Power Electronic Converters and Drives will enable technologies and processes
-            which in turn will lead to sustainable development. This theme aims to invite novel topologies, and control
-            strategies of Power Electronic Converters and Drives.
-          </div>
-        </li>
-        <li>ADVANCED ELECTRICAL MACHINES AND SMART APPARATUS
-          <div class="theme__details">
-            Brief description of the theme: The energy efficiency, high power density, compact design and robust control
-            for the electrical machines are the focus of the day. The development in the linear and rotating induction
-            machines with controllers, switched reluctance machines, permanent magnet machines, energy efficient special
-            machines are highly encouraging. The newer material options in transformer technology is turning to be game
-            changer. The inclusion of IoT and embedded systems, variety of sensors in the machine offer insights to the
-            diagnostics as well. The theme aims to invite new design and control approaches of electrical machines as
-            well as new equipment for monitoring of the electrical machines.
-          </div>
-        </li>
-        <li>ELECTRONIC COMMUNICATIONS
-          <div class="theme__details">
-            Contributions based on performance analysis, experimental development and simulation in the areas of optical
-            communication, wired/wireless communication and networks, Ad Hoc Network, sensor networks, Next generation
-            networks, RF and antenna systems, microwave communication, satellite communication, antenna design,
-            cognitive radio, energy harvesting and green communication, Internet of Things (IoT), IoT in urban
-            development, Intelligent transportation system, ICT applications in social upliftment, Navigation system are
-            invited.
-          </div>
-        </li>
-        <li>ELECTRONICS CIRCUITS AND SYSTEM DESIGN
-          <div class="theme__details">
-            Contributions are invited in the areas such as Embedded System Design, Cyber Physical System (CPS), Health
-            and Medical Electronics, Reconfigurable Architecture, Device Modelling and Simulation, Advanced CMOS
-            Devices, Emerging Memory Devices, Analog and Mixed-Signal Circuits, Circuit Timing and Power Models, Low
-            Power and Near/Sub Threshold Circuit Design, Logic and Behavioral Synthesis, Placement, Routing and Floor
-            Planning, Design Automation, Design Verification, Test, Reliability and Fault Tolerance, Formal
-            Verification, Design For Testability, Fault Modelling, Post-Silicon Validation, Testing Memories and Regular
-            Logic Arrays, Design for Manufacturability and Yield Analysis, Device Physics Design and Circuits using Non-
-            Silicon Materials.
-          </div>
-        </li>
-        <li>SIGNAL PROCESSING
-          <div class="theme__details">
-            Contributions are invited in the areas such as Signal Processing for Communications, Image and Video Signal
-            Processing, Multimedia applications, DSP algorithms and architectures, Speech and Speaker identification,
-            Biomedical applications, Language identification, Machine learning, Pattern recognition and classification,
-            Applications in Astronomy/ Astrophysics, Radar and Sonar signal processing.
-          </div>
-        </li>
-        <li>RECENT TRENDS IN APPLIED MATHEMATICS
-          <div class="theme__details">
-            Research in the Mathematics is a key element for the advancement of all areas of science and technology.
-            Being one of the vital areas of science in itself, Pure and Applied Mathematics works in tandem in all the
-            domains of engineering and technology. Moreover, it significantly contributes to research areas like
-            Mathematical Modeling of Industrial Processes and many more of its kind. Need of the hour is to cultivate
-            and sustain core research capability, and at the same time cross the borders to promote transformative and
-            interdisciplinary research. Graph Theory, Modeling and Simulation Bio-Mathematics, Statistical
-            Computation/Optimization Fuzzy logic, Algebra, Number Theory.
-          </div>
-        </li>
-        <li>RECENT TRENDS IN TEACHING-LEARNING IN ENGINEERING EDUCATION
-          <div class="theme__details">
-            Innovative methods in curriculum design and delivery, Social media and teaching-learning, Blended
-            Learning/MOOCs in Engineering Education, Assessing the assessment, Futuristic Trends in Engineering
-            Education, Entrepreneurship and Innovation.
-          </div>
-        </li>
-        <li>ADVANCES IN TRANSPORTATION ENGINEERING
-          <div class="theme__details">
-            Pavement materials, Pavement analysis and design, Traffic operations and management, Transportation
-            economics, Road safety and traffic awareness, Accident analysis, Transportation planning and modelling,
-            Intelligent transportation systems, Sustainable transportation system, Public transportation system, Road
-            construction technology.
-          </div>
-        </li>
-        <li>EMERGING TRENDS IN WATER RESOURCES AND ENVIRONMENTAL ENGINEERING
-          <div class="theme__details">
-            Impact of climate change on water resources, Ground water modeling & management, Hydrological modeling &
-            forecasting, Application of remote sensing & GIS in water resources, Irrigation planning & management,
-            Reservoir operation & optimization, Sustainable development of water resources, Watershed management, Water
-            quality monitoring & assessment, Environment hydraulics, Environmental impact assessment, Water and waste
-            water treatment, Solid waste management, Air and noise pollution, Recycle and reuse of waste.
-          </div>
-        </li>
-        <li>CONSTRUCTION TECHNOLOGY AND MANAGEMENT
-          <div class="theme__details">
-            Advanced construction materials and technologies, Construction economics, Workplace management, Life cycle
-            assessment, Construction laws, Construction productivity, Value engineering, Safety and health management,
-            Management practices for construction equipments and materials, Innovation in construction, Construction
-            waste management, Building energy efficiency, BIM and life cycle project management, Contract management.
-          </div>
-        </li>
-        <li>CONCRETE AND STRUCTURAL ENGINEERING
-          <div class="theme__details">
-            Advances in cement based materials and concrete technology, Structural analysis & design of Reinforced,
-            Steel and Prestressed concrete, Repair, Rehabilitation and Retrofitting of structural systems, Earthquake
-            resistant design of structures, Computational techniques in structural engineering, Geotechnical
-            investigations & design of structures, Smart material applications and Structural Health Monitoring,
-            Response measurement and control of structures, Sustainability in concrete and structural engineering.
-          </div>
-        </li>
-        <li>CHEMICAL PROCESS DEVELOPMENT AND DESIGN
-          <div class="theme__details">
-            This theme focuses on new process design and development where it can suggest substantial alteration in
-            equipment or process design or developing new catalyst or employing novel techniques like use of ultrasound
-            or microwave, micro or nano technology.
-          </div>
-        </li>
-        <li>TECHNOLOGIES AND GREEN ENVIRONMENT
-          <div class="theme__details">
-            Quest for the development of new alternative technologies is never ending process, so this theme will
-            provide platform for research related to various environmentally benign technologies to solve the current
-            problems such as, treatment of effluents, environmental management, recovery & reuse of materials and other
-            issues related to environmental problems.
-          </div>
-        </li>
-        <li>SUSTAINABLE MANUFACTURING PROCESSES
-          <div class="theme__details">
-            Sustainable manufacturing seeks to profitably produce goods while minimizing a firm's environmental impact,
-            natural resource use, and energy consumption. Under this theme, the research work related to methodologies,
-            manufacturing processes and materials that contribute to sustainable manufacturing processes is invited.
-          </div>
-        </li>
-        <li>DESIGN AND ANALYSIS OF MACHINE AND MECHANISM
-          <div class="theme__details">
-            Design and analysis of machines and mechanisms is the key for reduction of lead times from concept stage to
-            detailed design stage. The static and dynamic analysis to ensure the functionality, safety and reliability
-            of systems made up of different kinds of materials is backbone of successful machine design and development.
-            The theme aims to invite original work in the area of computational methods, experimental work and
-            analytical solutions for design and analysis of machines and mechanisms.
-          </div>
-        </li>
-        <li>ENERGY CONSERVATION AND MANAGEMENT
-          <div class="theme__details">
-            Energy is the "Energy" for growth and development. The objective of Energy Management and Conservation is to
-            achieve and maintain optimum energy procurement and utilization to minimize energy costs / waste without
-            affecting production, comfort and quality. The articles invited under this theme are expected to be in the
-            area of production, utilization and conservation of energy.
-          </div>
-        </li>
-      </ul>
-    </div>
+              </div>
+            </div>
+            </div>
 
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  FUTURISTIC POWER SYSTEM
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The smart grid, incorporating the distributed generation and electric vehicles (EVs), are in the realization
+                  stage. The large power grids are likely to be impacted greatly and the issues of grid stability, grid
+                  dynamics and grid monitoring requires considerations. The inclusion of power electronic converters in the
+                  form of FACTS devices, the DFIG converters, Battery controllers of EVs, active harmonic compensators etc.
+                  brings in newer challenges. The data availability and accumulations, information exchange about the power
+                  system and its component behaviour offers big data analytics and interpretation issues. This sub-theme
+                  covers the focus on intelligent technological solutions to many such power system problems.
+                </div>
+              </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    CONTROL OF POWER ELECTRONICS CONVERTERS AND DRIVES
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Due to advancements in power electronic device technology and availability of fast computational processors,
+                    Power Electronic Converters have penetrated to all the segments of engineering, where in electrical
+                    engineering has a role to play. Also, electrical machine drives are back-bone of industrial processes.
+                    Hence, effective control of Power Electronic Converters and Drives will enable technologies and processes
+                    which in turn will lead to sustainable development. This theme aims to invite novel topologies, and control
+                    strategies of Power Electronic Converters and Drives.
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      ADVANCED ELECTRICAL MACHINES AND SMART APPARATUS
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Brief description of the theme: The energy efficiency, high power density, compact design and robust control
+                      for the electrical machines are the focus of the day. The development in the linear and rotating induction
+                      machines with controllers, switched reluctance machines, permanent magnet machines, energy efficient special
+                      machines are highly encouraging. The newer material options in transformer technology is turning to be game
+                      changer. The inclusion of IoT and embedded systems, variety of sensors in the machine offer insights to the
+                      diagnostics as well. The theme aims to invite new design and control approaches of electrical machines as
+                      well as new equipment for monitoring of the electrical machines.
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ELECTRONIC COMMUNICATIONS
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse " aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Contributions are invited in the areas such as Embedded System Design, Cyber Physical System (CPS), Health
+                        and Medical Electronics, Reconfigurable Architecture, Device Modelling and Simulation, Advanced CMOS
+                        Devices, Emerging Memory Devices, Analog and Mixed-Signal Circuits, Circuit Timing and Power Models, Low
+                        Power and Near/Sub Threshold Circuit Design, Logic and Behavioral Synthesis, Placement, Routing and Floor
+                        Planning, Design Automation, Design Verification, Test, Reliability and Fault Tolerance, Formal
+                        Verification, Design For Testability, Fault Modelling, Post-Silicon Validation, Testing Memories and Regular
+                        Logic Arrays, Design for Manufacturability and Yield Analysis, Device Physics Design and Circuits using Non-
+                        Silicon Materials.
+                      </div>
+                    </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          SIGNAL PROCESSING
+                        </button>
+                      </h2>
+                      <div id="collapseNine" class="accordion-collapse collapse " aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Contributions are invited in the areas such as Signal Processing for Communications, Image and Video Signal
+                          Processing, Multimedia applications, DSP algorithms and architectures, Speech and Speaker identification,
+                          Biomedical applications, Language identification, Machine learning, Pattern recognition and classification,
+                          Applications in Astronomy/ Astrophysics, Radar and Sonar signal processing.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                          RECENT TRENDS IN APPLIED MATHEMATICS
+                        </button>
+                      </h2>
+                      <div id="collapseTen" class="accordion-collapse collapse " aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Research in the Mathematics is a key element for the advancement of all areas of science and technology.
+                          Being one of the vital areas of science in itself, Pure and Applied Mathematics works in tandem in all the
+                          domains of engineering and technology. Moreover, it significantly contributes to research areas like
+                          Mathematical Modeling of Industrial Processes and many more of its kind. Need of the hour is to cultivate
+                          and sustain core research capability, and at the same time cross the borders to promote transformative and
+                          interdisciplinary research. Graph Theory, Modeling and Simulation Bio-Mathematics, Statistical
+                          Computation/Optimization Fuzzy logic, Algebra, Number Theory.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading12">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                          ADVANCES IN TRANSPORTATION ENGINEERING
+                        </button>
+                      </h2>
+                      <div id="collapse13" class="accordion-collapse collapse " aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Pavement materials, Pavement analysis and design, Traffic operations and management, Transportation
+                          economics, Road safety and traffic awareness, Accident analysis, Transportation planning and modelling,
+                          Intelligent transportation systems, Sustainable transportation system, Public transportation system, Road
+                          construction technology.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading14">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                          EMERGING TRENDS IN WATER RESOURCES AND ENVIRONMENTAL ENGINEERING
+                        </button>
+                      </h2>
+                      <div id="collapse14" class="accordion-collapse collapse " aria-labelledby="heading14" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Impact of climate change on water resources, Ground water modeling & management, Hydrological modeling &
+                          forecasting, Application of remote sensing & GIS in water resources, Irrigation planning & management,
+                          Reservoir operation & optimization, Sustainable development of water resources, Watershed management, Water
+                          quality monitoring & assessment, Environment hydraulics, Environmental impact assessment, Water and waste
+                          water treatment, Solid waste management, Air and noise pollution, Recycle and reuse of waste.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading15">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                          CONSTRUCTION TECHNOLOGY AND MANAGEMENT
+                        </button>
+                      </h2>
+                      <div id="collapse15" class="accordion-collapse collapse " aria-labelledby="heading15" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Advanced construction materials and technologies, Construction economics, Workplace management, Life cycle
+                          assessment, Construction laws, Construction productivity, Value engineering, Safety and health management,
+                          Management practices for construction equipments and materials, Innovation in construction, Construction
+                          waste management, Building energy efficiency, BIM and life cycle project management, Contract management.
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading16">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                          CONCRETE AND STRUCTURAL ENGINEERING
+                        </button>
+                      </h2>
+                      <div id="collapse16" class="accordion-collapse collapse " aria-labelledby="heading16" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Advances in cement based materials and concrete technology, Structural analysis & design of Reinforced,
+                          Steel and Prestressed concrete, Repair, Rehabilitation and Retrofitting of structural systems, Earthquake
+                          resistant design of structures, Computational techniques in structural engineering, Geotechnical
+                          investigations & design of structures, Smart material applications and Structural Health Monitoring,
+                          Response measurement and control of structures, Sustainability in concrete and structural engineering.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading17">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                          CHEMICAL PROCESS DEVELOPMENT AND DESIGN
+                        </button>
+                      </h2>
+                      <div id="collapse17" class="accordion-collapse collapse " aria-labelledby="heading17" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          This theme focuses on new process design and development where it can suggest substantial alteration in
+                          equipment or process design or developing new catalyst or employing novel techniques like use of ultrasound
+                          or microwave, micro or nano technology.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading18">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                          GREEN TECHNOLOGIES
+                        </button>
+                      </h2>
+                      <div id="collapse18" class="accordion-collapse collapse " aria-labelledby="heading18" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Quest for the development of new alternative technologies is never ending process, so this theme will
+                          provide platform for research related to various environmentally benign technologies to solve the current
+                          problems such as, treatment of effluents, environmental management, recovery & reuse of materials and other
+                          issues related to environmental problems.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading19">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                          SUSTAINABLE MANUFACTURING PROCESSES
+                        </button>
+                      </h2>
+                      <div id="collapse19" class="accordion-collapse collapse " aria-labelledby="heading19" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Sustainable manufacturing seeks to profitably produce goods while minimizing a firm's environmental impact,
+                          natural resource use, and energy consumption. Under this theme, the research work related to methodologies,
+                          manufacturing processes and materials that contribute to sustainable manufacturing processes is invited.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading20">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                          DESIGN AND ANALYSIS OF MACHINE AND MECHANISM
+                        </button>
+                      </h2>
+                      <div id="collapse20" class="accordion-collapse collapse " aria-labelledby="heading20" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Design and analysis of machines and mechanisms is the key for reduction of lead times from concept stage to
+                          detailed design stage. The static and dynamic analysis to ensure the functionality, safety and reliability
+                          of systems made up of different kinds of materials is backbone of successful machine design and development.
+                          The theme aims to invite original work in the area of computational methods, experimental work and
+                          analytical solutions for design and analysis of machines and mechanisms.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading21">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                          ENERGY CONSERVATION AND MANAGEMENT
+                        </button>
+                      </h2>
+                      <div id="collapse21" class="accordion-collapse collapse " aria-labelledby="heading21" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Energy is the "Energy" for growth and development. The objective of Energy Management and Conservation is to
+                          achieve and maintain optimum energy procurement and utilization to minimize energy costs / waste without
+                          affecting production, comfort and quality. The articles invited under this theme are expected to be in the
+                          area of production, utilization and conservation of energy.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
   </section>
 
   <section class="about">
@@ -358,9 +511,9 @@
     <h1>Keynote Speakers</h1>
     <div>
       <div>
-        <img src="./asset/dr nami.jpg" alt="Speaker">
+        <img src="./asset/dr nami.jpg" class="card-img-top" alt="Speaker">
         <div class="speaker_info">
-        <h1>Dr. Mohammad Nami</h1>
+        <h2>Dr. Mohammad Nami</h2>
        <div>
         <span>Mohammad.nami@brainmappingfo</span>
         <span>
@@ -372,9 +525,9 @@
         </div>
       </div>
       <div>
-        <img src="./asset/jaware.png" alt="Speaker">
+        <img src="./asset/jaware.png" class="card-img-top" alt="Speaker">
         <div class="speaker_info">
-        <h1>Andrew Ware</h1>
+        <h2>Andrew Ware</h2>
         <div>
           <span>andrew.ware@southwales.ac.uk</span>
         <span>Professor In Computing</span>
@@ -384,6 +537,8 @@
       </div>
     </div>
   </section>
+
+
 
 
   <section class="committe" id="committe">
@@ -406,15 +561,16 @@
         <li>Dr. Bhavesh Mewada, Principal, PIT, Parul University</li>
 
         <li>
-          Professor Ruchi Shrivastava ,Principal , PIET - Diploma Studies
+          Dr. Ruchi Shrivastava ,Principal , PIET - Diploma Studies
         </li>
         <li>
-          Professor Jatin Vaidhya , Principal , Parul Polytechnic Institute
+          Dr. Jatin Vaidhya , Principal , Parul Polytechnic Institute
         </li>
         <h4>Conference Chair:</h4>
 
         <li>Dr. Chirag A. Naik</li>
         <li>Dr. Rutvij Joshi</li>
+        <li>Dr. Vyomesh Buch</li>
         <li>Dr. Richa Mishra</li>
       </ul>
       <h3>Advisory Committee</h3>
@@ -689,31 +845,31 @@
           </tr>
           <tr>
             <td>Deadline for Submission of Full-Length Paper</td>
-            <td>15/02/2022</td>
+            <td>25/02/2022</td>
           </tr>
           <tr>
             <td>Notification for Acceptance of Paper</td>
-            <td>28/02/2022</td>
+            <td>10/03/2022</td>
           </tr>
           <tr>
-            <td>Deadline for Submission of Camera-Ready Copy</td>
-            <td>15/03/2022</td>
-          </tr>
-          <tr>
-            <td>Deadline for Early Bird Registration</td>
+            <td>Deadline for Submission of Camera-Ready Paper</td>
             <td>21/03/2022</td>
           </tr>
           <tr>
+            <td>Deadline for Early Bird Registration</td>
+            <td>28/03/2022</td>
+          </tr>
+          <!-- <tr>
             <td>Deadline for Registration</td>
             <td>6/04/2022</td>
-          </tr>
+          </tr> -->
           <tr>
             <td>Deadline for Late Registration</td>
-            <td>13/04/2022</td>
+            <td>21/04/2022</td>
           </tr>
           <tr>
             <td>Conference Dates</td>
-            <td>13/05/2022 & 14/05/2022</td>
+            <td>20,21/05/2022</td>
           </tr>
         </table>
       </div>

@@ -11,7 +11,7 @@
 
 html {
   overflow: scroll;
-  font-family: custom;
+  /* font-family: custom; */
   scroll-behavior: smooth;
 }
 
@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
   color: white;
   padding: 15px;
   /* text-shadow: 0 0 2px black; */
-  font-size: large;
+  /* font-size: large; */
   min-width: max-content;
   /* mix-blend-mode: difference; */
 }
@@ -151,8 +151,8 @@ section {
   transform: translate(-50%, 50%);
   max-width: 600px;
   width: 80%;
-  height: 50px;
-  padding: 10px;
+  height: auto;
+  padding: 5px;
   border-radius: 5px;
   background-color: white;
   text-decoration: none;
@@ -167,6 +167,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home .countDown > div > h2{
+  margin-bottom: 0;
 }
 
 /* Home section End*/
@@ -217,14 +221,18 @@ section {
 
 /* keynoteSpeaker Section */
 .keynoteSpeaker {
-  padding: 50px;
+  padding: 100px;
   text-align: center;
+  /* background-image: url('../asset/speakerBg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .keynoteSpeaker > div {
   display: flex;
   justify-content: space-around;
-  background-color: white;
+  flex-wrap: wrap;
   padding: 50px;
 }
 
@@ -234,9 +242,11 @@ section {
   width: 400px;
   height: auto;
   min-height: 450px;
+  margin:20px;
   overflow: hidden;
   box-shadow: 0 0 5px black;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .keynoteSpeaker > div > div > img {
@@ -245,7 +255,9 @@ section {
 
 .keynoteSpeaker > div > div > div {
   padding: 20px;
-  background-color: black;
+  /* backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+  background-color: #232323;
   color: white;
   flex: 1;
 }
@@ -260,15 +272,6 @@ section {
   margin: 10px;
 }
 
-/* .keynoteSpeaker > div > div > div > div {
-  transform: translateY(200px);
-  transition: all ease 0.25s;
-}
-
-.keynoteSpeaker > div > div:hover  .speaker_info > div{
-  transform: translateY(0);
-} */
-
 /* keynoteSpeaker Section End*/
 
 /* committe Section */
@@ -281,7 +284,7 @@ section {
 
 .committe > h1 {
   padding: 10px;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .committe > div {
@@ -293,7 +296,7 @@ section {
 }
 
 .committe > div > ul > li {
-  font-size: medium;
+  /* font-size: medium; */
   padding: 10px;
 }
 
@@ -324,7 +327,7 @@ section {
 
 .tabularSection > div > h1 {
   padding: 10px;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .tabularSection > div > div {
@@ -346,7 +349,7 @@ section {
 th,
 td {
   border: 1px solid white;
-  border-collapse: collapse;
+  border-collapse: separate;
   padding: 15px;
   color: white;
   font-weight: 100;
@@ -561,7 +564,7 @@ footer > ul > li > p {
     text-decoration: none;
     color: white;
     padding: 15px;
-    font-size: large;
+    /* font-size: large; */
     min-width: max-content;
     display: none;
     background-color: unset !important;
@@ -578,11 +581,10 @@ footer > ul > li > p {
   /* keynoteSpeaker Section */
 
   .keynoteSpeaker {
-    padding: unset;
+    padding: 10px;
   }
 
   .keynoteSpeaker > div {
-    flex-direction: column;
     align-items: center;
     padding: unset;
   }
@@ -590,12 +592,10 @@ footer > ul > li > p {
   .keynoteSpeaker > div > div {
     padding: unset;
     overflow: hidden;
-    box-shadow: unset;
     height: auto;
     min-height: unset;
   }
   .keynoteSpeaker > div > div > img {
-    flex: unset;
     width: 100%;
     height: 250px;
   }
@@ -611,12 +611,12 @@ footer > ul > li > p {
   }
 
   .home .content > h1 {
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
     font-weight: 400;
   }
 
   .home .content > p {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     line-height: 1.2;
   }
 
@@ -668,7 +668,7 @@ footer > ul > li > p {
   .tabularSection > div > div > table,
   th,
   td {
-    font-size: small;
+    /* font-size: small; */
     padding: 5px;
   }
 
@@ -693,7 +693,7 @@ footer > ul > li > p {
     position: unset;
     padding: unset;
     max-width: unset;
-    font-size: unset;
+    /* font-size: unset; */
     box-shadow: unset;
     color: unset;
     backdrop-filter: unset;
@@ -734,7 +734,7 @@ footer > ul > li > p {
   }
   footer > ul > li > p {
     padding: 5px;
-    font-size: small;
+    /* font-size: small; */
   }
 
   footer > div {
