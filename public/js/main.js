@@ -21,7 +21,7 @@ window.onload = (e) => {
 
   let platform = navigator.userAgent;
   console.log(platform);
-  let date = new Date("May 13, 2022 00:00:00").getTime();
+  let date = new Date("May 20, 2022 00:00:00").getTime();
   setInterval(() => {
     let now = new Date().getTime();
     let distance = date - now;

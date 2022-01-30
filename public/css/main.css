@@ -169,7 +169,7 @@ section {
   align-items: center;
 }
 
-.home .countDown > div > h2{
+.home .countDown > div > h2 {
   margin-bottom: 0;
 }
 
@@ -178,17 +178,26 @@ section {
 /* themes section */
 
 .themes {
+  background: url("../asset/asset_themes-big.jpg");
   background-color: orange;
-  padding: 10vh 0 2vh 2vh;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  padding: 10vh 0 10vh 20vh;
 }
 
 .themes > div {
-  padding: 50px;
+  padding: 20px 40px;
   border-radius: 20px 0 0 20px;
-  background-color: white;
+  /* background-color: white; */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 5px black;
 }
 
 .themes > div > h1 {
+  color: white;
+  text-shadow: 0 0 5px black;
   padding: 10px;
 }
 
@@ -242,7 +251,7 @@ section {
   width: 400px;
   height: auto;
   min-height: 450px;
-  margin:20px;
+  margin: 20px;
   overflow: hidden;
   box-shadow: 0 0 5px black;
   cursor: pointer;
@@ -352,8 +361,7 @@ td {
   border-collapse: separate;
   padding: 15px;
   color: white;
-  font-weight: 100;
-  text-shadow: 0 0 2px black;
+  font-weight: 400;
 }
 
 /* Keydates Section End*/
@@ -397,42 +405,27 @@ td {
 .callForPapers {
   padding: 50px;
 }
+
 .callForPapers > h1 {
   text-align: center;
 }
 
-.callForPapers > div > h1,
-.callForPapers > div > ul {
-  padding: 50px 10px 25px 10px;
-}
-
-.callForPapers > div > ul > li,
-.callForPapers > div > ol > li {
-  text-transform: capitalize;
-  padding: 10px;
-}
-
-.callForPapers > div:nth-child(3) {
-  padding: unset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.callForPapers > div > a {
-  margin: 0 auto;
+.cBtn {
+  display: inline-block;
   border: 2px solid orange;
-  padding: 1em 2.5em;
+  padding: 0.75em;
   text-decoration: none;
   color: white;
   background-color: orange;
   transition: all ease 0.25s;
   border-radius: 2px;
   box-shadow: 0 0 5px black;
+  max-width: fit-content;
+  min-width: fit-content;
 }
 
-.callForPapers > div > a:hover,
-.callForPapers > div > a:focus {
+.cBtn:hover,
+.cBtn:focus {
   background-color: white;
   color: orange;
   box-shadow: unset;
@@ -460,8 +453,10 @@ footer > div {
   align-items: center;
   justify-content: center;
 }
+footer > div > p,
 footer > div > a {
-  margin: 0 10px;
+  margin: 0 5px;
+  margin-bottom: 0;
 }
 
 footer > div > a {
@@ -473,9 +468,10 @@ footer > ul > li > p {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* themes section */
+  .keynoteSpeaker {
+    padding: 10px;
+  }
 
-  /* themes section */
   /* Keydates Section */
 
   .tabularSection {
@@ -622,13 +618,13 @@ footer > ul > li > p {
 
   /* themes Section */
 
-  .themes > div {
-    padding: 25px 0 25px 25px;
+  .themes {
+    background: url("../asset/asset_themes.jpg");
+    padding: 10vh 0 2vh 2vh;
   }
 
-  .themes > div > ul > li {
-    text-transform: lowercase;
-    padding: 10px;
+  .themes > div {
+    padding: 25px 0 25px 25px;
   }
 
   /* themes Section End*/
@@ -668,7 +664,7 @@ footer > ul > li > p {
   .tabularSection > div > div > table,
   th,
   td {
-    /* font-size: small; */
+    font-size: small;
     padding: 5px;
   }
 
@@ -678,32 +674,44 @@ footer > ul > li > p {
     display: flex;
     align-items: center;
     background-image: unset;
-    padding: 20px;
+    padding: 10px;
     user-select: none;
   }
 
   .about > img {
+    margin-top: 20px;
     display: block;
     border-radius: 10px;
     opacity: unset;
     object-fit: contain;
     max-width: 100%;
+    box-shadow: 0 0 10px black;
   }
   .about > div {
     position: unset;
-    padding: unset;
+    padding: 10px;
     max-width: unset;
     /* font-size: unset; */
     box-shadow: unset;
     color: unset;
     backdrop-filter: unset;
+    text-justify: unset;
+  }
+
+  .about > div > br {
+    display: none;
   }
   .about > div > h1 {
+    color: black;
     margin-top: 15px;
     margin-bottom: 10px;
   }
 
   /* section 3 End*/
+
+  .callForPapers {
+    padding: 20px;
+  }
 
   /* committe Section */
 
